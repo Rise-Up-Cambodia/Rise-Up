@@ -19,4 +19,3 @@
 		document.getElementById("viewer").style.display="none";
 		document.getElementById("ov").style.display="none";
 	}   
-s

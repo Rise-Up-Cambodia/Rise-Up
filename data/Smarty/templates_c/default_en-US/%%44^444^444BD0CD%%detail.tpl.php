@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-29 08:03:10
+<?php /* Smarty version 2.6.26, created on 2015-06-29 08:47:15
          compiled from C:%5Cwamp%5Cwww%5CGitHub%5CRise-Up%5Chtml/../data/Smarty/templates/default_en-US/products/detail.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 23, false),array('modifier', 'strlen', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 51, false),array('modifier', 'h', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 53, false),array('modifier', 'number_format', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 115, false),array('modifier', 'sfPrePoint', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 144, false),array('modifier', 'nl2br_html', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 189, false),array('modifier', 'sfGetErrorColor', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 206, false),array('modifier', 'default', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 235, false),array('modifier', 'sfDispDBDate', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 343, false),array('modifier', 'nl2br', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 344, false),array('modifier', 'u', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 359, false),array('modifier', 'sfNoImageMainList', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 360, false),array('function', 'html_options', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 207, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 23, false),array('modifier', 'strlen', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 51, false),array('modifier', 'h', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 53, false),array('modifier', 'number_format', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 115, false),array('modifier', 'sfPrePoint', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 144, false),array('modifier', 'nl2br_html', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 189, false),array('modifier', 'sfGetErrorColor', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 206, false),array('modifier', 'default', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 235, false),array('modifier', 'sfDispDBDate', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 319, false),array('modifier', 'nl2br', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 320, false),array('modifier', 'u', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 335, false),array('modifier', 'sfNoImageMainList', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 336, false),array('function', 'html_options', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/products/detail.tpl', 207, false),)), $this); ?>
 
 <script type="text/javascript" src="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 js/products.js"></script>
@@ -311,35 +311,7 @@ products/list.php?category_id=<?php echo ((is_array($_tmp=$this->_tpl_vars['arrR
             <?php endif; ?>
 
             <!--★お気に入り登録★-->
-            <?php if (((is_array($_tmp=@OPTION_FAVORITE_PRODUCT)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 1 && ((is_array($_tmp=$this->_tpl_vars['tpl_login'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) === true): ?>
-                <div class="favorite_btn">
-                    <?php $this->assign('add_favorite', "add_favorite".($this->_tpl_vars['product_id'])); ?>
-                    <?php if (((is_array($_tmp=$this->_tpl_vars['arrErr'][$this->_tpl_vars['add_favorite']])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp))): ?>
-                        <div class="attention"><?php echo ((is_array($_tmp=$this->_tpl_vars['arrErr'][$this->_tpl_vars['add_favorite']])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-</div>
-                    <?php endif; ?>
-                    <?php if (! ((is_array($_tmp=$this->_tpl_vars['is_favorite'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp))): ?>
-                        <a class="bt01" href="javascript:fnChangeAction('?product_id=<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['arrProduct']['product_id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)); ?>
-'); fnModeSubmit('add_favorite','favorite_product_id','<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['arrProduct']['product_id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)); ?>
-');">Add to Favorites</a>
-                    <?php else: ?>
-                        <span class="bt01" name="add_favorite_product" id="add_favorite_product">Already in favorites</span>
-                        <script type="text/javascript" src="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-js/jquery.tipsy.js"></script>
-                        <script type="text/javascript">
-                            var favoriteButton = $("#add_favorite_product");
-                            favoriteButton.tipsy({gravity: $.fn.tipsy.autoNS, fallback: "Already in favorites", fade: true });
-
-                            <?php if (((is_array($_tmp=$this->_tpl_vars['just_added_favorite'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == true): ?>
-                            favoriteButton.load(function(){$(this).tipsy("show")});
-                            $(function(){
-                                var tid = setTimeout('favoriteButton.tipsy("hide")',5000);
-                            });
-                            <?php endif; ?>
-                        </script>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
+        
         </div>
     </div>
     <!--▲買い物かご-->
