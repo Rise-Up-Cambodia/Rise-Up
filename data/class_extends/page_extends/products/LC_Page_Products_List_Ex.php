@@ -34,7 +34,11 @@ require_once CLASS_REALDIR . 'pages/products/LC_Page_Products_List.php';
  * @version $Id: LC_Page_Products_List_Ex.php 21867 2012-05-30 07:37:01Z nakanishi $
  */
 class LC_Page_Products_List_Ex extends LC_Page_Products_List {
-
+    var $access='smp';
+    function LC_Page_Products_List_Ex($data)
+    {
+        $this->access=$data;
+    }
     // }}}
     // {{{ functions
 
@@ -45,6 +49,7 @@ class LC_Page_Products_List_Ex extends LC_Page_Products_List {
      */
     function init() {
         parent::init();
+        $this->data_mode=$this->access; //statement that needed to be added
     }
 
     /**

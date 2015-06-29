@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 08:03:22
+<?php /* Smarty version 2.6.26, created on 2015-06-23 07:02:13
          compiled from mypage/login.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'mypage/login.tpl', 26, false),array('modifier', 'h', 'mypage/login.tpl', 26, false),array('modifier', 'sfGetErrorColor', 'mypage/login.tpl', 42, false),array('modifier', 'sfGetChecked', 'mypage/login.tpl', 45, false),array('modifier', 'sfTrimURL', 'mypage/login.tpl', 69, false),)), $this); ?>
@@ -92,4 +92,4 @@ entry/kiyaku.php">Register as a member</a>
             </form>
         </div>
     </div>
-</div>
+</div>

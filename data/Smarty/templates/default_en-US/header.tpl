@@ -1,65 +1,92 @@
-<!--{*
- * This file is part of EC-CUBE
- *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
- *
- * http://www.lockon.co.jp/
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.    See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA    02111-1307, USA.
- *}-->
-
 <!--▼HEADER-->
+<script type="text/javascript" src="<!--{$TPL_URLPATH}-->js/custom.js"></script>
+<script>
+window.onload=function(){
+	$title = document.title;
+	
+	if($title.indexOf('All products')>0)
+	{
+		$("li a:contains('Products')").css("background","#f0433f");
+		$("li a:contains('Products')").css("color","#fff");
+		$("li a:contains('Home')").css("background","none");
+		$("li a:contains('Home')").css("color","#f0433f");
+	}
+	else if($title.indexOf('Our Brands')>0)
+	{
+		$("li a:contains('Brands')").css("background","#f0433f");
+		$("li a:contains('Brands')").css("color","#fff");
+		$("li a:contains('Home')").css("background","none");
+		$("li a:contains('Home')").css("color","#f0433f");
+	}
+	else if($title.indexOf('Popular Products')>0)
+	{
+		$("li a:contains('Popular Product')").css("background","#f0433f");
+		$("li a:contains('Popular Product')").css("color","#fff");
+		$("li a:contains('Home')").css("background","none");
+		$("li a:contains('Home')").css("color","#f0433f");
+	}
+	else if($title.indexOf('MY page')>0)
+	{
+		$("li a:contains('User Profile')").css("background","#f0433f");
+		$("li a:contains('User Profile')").css("color","#fff");
+		$("li a:contains('Home')").css("background","none");
+		$("li a:contains('Home')").css("color","#f0433f");
+	}
+	else
+	{
+		$("li a:contains('Home')").css("background","#f0433f");
+	}
+	
+}
+</script>
 <div id="header_wrap">
     <div id="header" class="clearfix">
         <div id="logo_area">
             <h1>
-                <a href="<!--{$smarty.const.TOP_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/common/Vanamo_Logo.png" alt="<!--{$arrSiteInfo.shop_name|h}-->" /><span><!--{$arrSiteInfo.shop_name|h}-->/<!--{$tpl_title|h}--></span></a>
+                <a href="<!--{$smarty.const.TOP_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/common/logo.png" alt="<!--{$arrSiteInfo.shop_name|h}-->" /><span><!--{$arrSiteInfo.shop_name|h}-->/<!--{$tpl_title|h}--></span></a>
             </h1>
         </div>
-        <div id="header_utility">
-            <div id="headerInternalColumn">
-            <!--{* ▼HeaderInternal COLUMN*}-->
-            <!--{if $arrPageLayout.HeaderInternalNavi|@count > 0}-->
-                <!--{* ▼上ナビ *}-->
-                <!--{foreach key=HeaderInternalNaviKey item=HeaderInternalNaviItem from=$arrPageLayout.HeaderInternalNavi}-->
-                    <!-- ▼<!--{$HeaderInternalNaviItem.bloc_name}--> -->
-                    <!--{if $HeaderInternalNaviItem.php_path != ""}-->
-                        <!--{include_php file=$HeaderInternalNaviItem.php_path items=$HeaderInternalNaviItem}-->
-                    <!--{else}-->
-                        <!--{include file=$HeaderInternalNaviItem.tpl_path items=$HeaderInternalNaviItem}-->
-                    <!--{/if}-->
-                    <!-- ▲<!--{$HeaderInternalNaviItem.bloc_name}--> -->
-                <!--{/foreach}-->
-                <!--{* ▲上ナビ *}-->
-            <!--{/if}-->
-            <!--{* ▲HeaderInternal COLUMN*}-->
-            </div>
+        <div class="search_div">
+            <!--検索フォーム-->
+            <form name="search_form" method="get" action="<!--{$smarty.const.ROOT_URLPATH}-->products/list.php">
+                <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
+                <table class="search-box" border="none">
+               <tr>
+                   <td> <input type="text" class="search-input" name="name" placeholder="Search Product" class="box140" maxlength="50" value="<!--{$smarty.get.name|h}-->" /></td>
+                       <td class="col-button-search">     <p class="btn">     <button class="bt02" id="button-search" name="search"></button></td>
+
+               </tr>
+                </div>
+                </table>
+            </form>
+        </div>
+        
             <div id="header_navi">
-                <ul>
-                    <li class="mypage">
-                    <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">MY page</a>
+                <ul> <br/><br/> <br/><br/> <br/><br/>
+                    <!--{*<a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">MY page</a>*}
+                    {*</li>*}-->
+                    <li class="entry" id="active" >
+                        <a href="<!--{$smarty.const.ROOT_URLPATH}-->">Home</a>
                     </li>
-                    <li class="entry">
-                        <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php">Member registration</a>
+                    <li class="view_basket"  id="active" >
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->products/list.php">Products</a>
                     </li>
-                    <li class="view_basket">
-                        <a href="<!--{$smarty.const.CART_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/button/icon_cart.png" alt="" />View cart</a>
+                    <li class="view_basket"  id="active" >
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->brand/brand.php">Brands</a>
+                    </li>
+                    <li class="view_basket"  id="active">
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->products/popular.php">Popular Product</a>
+                    </li>
+                    <li class="view_basket"  id="active" >
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">User Profile</a>
                     </li>
                 </ul>
+				<div id="cart_view">	
+						<p class="item"><a class="btn-viewcart" href="<!--{$smarty.const.CART_URLPATH}-->">View cart</a>
+						Items in cart:<span class="attention"><!--{$arrCartList.0.TotalQuantity|number_format|default:0}--></span></p>
+				</div>
             </div>
         </div>
     </div>
 </div>
-<!--▲HEADER-->
+

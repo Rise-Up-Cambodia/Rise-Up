@@ -32,7 +32,7 @@ require_once CLASS_EX_REALDIR . 'page_extends/LC_Page_Ex.php';
  * @version $Id: LC_Page_Products_List.php 22897 2013-06-25 07:26:42Z michael_nelson $
  */
 class LC_Page_Products_List extends LC_Page_Ex {
-
+   var $data_mode;
     // {{{ properties
 
     /** テンプレートクラス名1 */
@@ -85,7 +85,26 @@ class LC_Page_Products_List extends LC_Page_Ex {
     function process() {
         parent::process();
         $this->action();
-        $this->sendResponse();
+        //$this->sendResponse();
+        If($this->data_mode=='API'){
+            echo json_encode($this->arrProducts);
+        }else if($this->data_mode=='WEB'){
+            $this->sendResponse();
+        }else{
+			  /*My own query*/
+        $servername = "localhost";
+        $username = "root";
+        $password = "1234";
+        $dbname = "rise_up_shop";
+        // Create connection
+		$dd = $this->data_mode;
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+
+        $sql="SELECT * FROM dtb_products where product_id=$dd";
+        $result = mysqli_query($conn,$sql);
+		echo json_encode(mysqli_fetch_object($result));
+		}
     }
 
     /**

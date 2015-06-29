@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 07:52:53
+<?php /* Smarty version 2.6.26, created on 2015-06-28 11:17:33
          compiled from login_frame.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'printXMLDeclaration', 'login_frame.tpl', 1, false),array('function', 't', 'login_frame.tpl', 35, false),array('modifier', 'script_escape', 'login_frame.tpl', 28, false),)), $this); ?>
@@ -24,7 +24,7 @@ js/jquery-1.4.2.min.js"></script>
 <link rel="shortcut icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 img/common/favicon.ico" />
 <link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/common/favicon.ico" />
+img/common/favicon.png" />
 <script type="text/javascript">//<![CDATA[
     <?php echo ((is_array($_tmp=$this->_tpl_vars['tpl_javascript'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 
@@ -53,4 +53,4 @@ unset($_smarty_tpl_vars);
 
 </div>
 </body>
-</html>
+</html>

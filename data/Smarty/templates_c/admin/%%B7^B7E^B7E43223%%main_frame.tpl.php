@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 07:53:04
+<?php /* Smarty version 2.6.26, created on 2015-06-28 11:17:47
          compiled from main_frame.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'printXMLDeclaration', 'main_frame.tpl', 1, false),array('function', 't', 'main_frame.tpl', 78, false),array('modifier', 'script_escape', 'main_frame.tpl', 28, false),array('modifier', 'count', 'main_frame.tpl', 65, false),array('modifier', 'h', 'main_frame.tpl', 93, false),array('modifier', 'date_format', 'main_frame.tpl', 162, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'printXMLDeclaration', 'main_frame.tpl', 1, false),array('function', 't', 'main_frame.tpl', 55, false),array('modifier', 'script_escape', 'main_frame.tpl', 5, false),array('modifier', 'count', 'main_frame.tpl', 42, false),array('modifier', 'h', 'main_frame.tpl', 69, false),array('modifier', 'date_format', 'main_frame.tpl', 142, false),)), $this); ?>
 <?php echo GC_Utils_Ex::printXMLDeclaration(array(), $this);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -56,9 +56,9 @@ js/jquery.ui/i18n/jquery.ui.datepicker-<?php echo ((is_array($_tmp=@LANG_CODE)) 
 <title><?php echo ((is_array($_tmp=@ADMIN_TITLE)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 </title>
 <link rel="shortcut icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/common/favicon.ico" />
-<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/common/favicon.ico" />
+img/common/favicon.png" />
+<link rel="icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+img/common/favicon.png" />
 <script type="text/javascript">//<![CDATA[
     <?php echo ((is_array($_tmp=$this->_tpl_vars['tpl_javascript'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 
@@ -101,21 +101,23 @@ smarty_core_smarty_include_php(array('smarty_file' => ((is_array($_tmp=$this->_t
     <div id="header-contents">
         <div id="logo"><a href="<?php echo ((is_array($_tmp=@ADMIN_HOME_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 "><img src="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/header/logo.jpg" width="172" height="25" alt="EC-CUBE" /></a></div>
-        <div id="site-check">
-            <p class="info"><?php echo smarty_function_t(array('string' => "tpl_<span>Login&nbsp;:&nbsp;T_ARG1</span>&nbsp;_01",'escape' => 'none','T_ARG1' => ((is_array($_tmp=((is_array($_tmp=$_SESSION['login_name'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp))), $this);?>
+img/header/logo.png" width="172" height="25" alt="EC-CUBE" /></a></div>
+        <p class="info"><?php echo smarty_function_t(array('string' => "tpl_<span>Login&nbsp;:&nbsp;T_ARG1</span>&nbsp;_01",'escape' => 'none','T_ARG1' => ((is_array($_tmp=((is_array($_tmp=$_SESSION['login_name'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp))), $this);?>
 </p>
             <ul>
-                <li class="bt_forum"><a href="http://en.ec-cube.net/forum/" class="btn-tool-format02" target="_blank"><span>USER FORUMS</span></a></li>
-                <li class="bt_checksite"><a href="<?php echo ((is_array($_tmp=@HTTP_URL)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+                <li><img src="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+img/header/user.png" id="admin_user"/>
+                                        <ul id="user_popup">
+                        <li class="bt_checksite"><a href="<?php echo ((is_array($_tmp=@HTTP_URL)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 <?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-" class="btn-tool-format" target="_blank"><span><?php echo smarty_function_t(array('string' => 'tpl_CHECK SITE_01'), $this);?>
+"  target="_blank"><span><?php echo smarty_function_t(array('string' => 'tpl_CHECK SITE_01'), $this);?>
 </span></a></li>
-                <li><a href="<?php echo ((is_array($_tmp=@ADMIN_LOGOUT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-" class="btn-tool-format"><?php echo smarty_function_t(array('string' => 'tpl_LOGOUT_01'), $this);?>
+                        <li><a href="<?php echo ((is_array($_tmp=@ADMIN_LOGOUT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+"><?php echo smarty_function_t(array('string' => 'tpl_LOGOUT_01'), $this);?>
 </a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
     </div>
 </div>
 
@@ -157,62 +159,74 @@ $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
         </li>
-        <li id="navi-order" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'order'): ?>on<?php endif; ?>">
-            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+   <!--     {*<li id="navi-order" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'order'): ?>on<?php endif; ?>">*}
+            {*<a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 <?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 order/<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 "><span><?php echo smarty_function_t(array('string' => 'tpl_Orders_01'), $this);?>
-</span></a>
-            <?php $_smarty_tpl_vars = $this->_tpl_vars;
+</span></a>*}
+            {*<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."order/subnavi.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?>
-        </li>
-        <li id="navi-total" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'total'): ?>on<?php endif; ?>">
-            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+ ?>*}
+        {*</li>*}
+        {*<li id="navi-total" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'total'): ?>on<?php endif; ?>">*}
+            {*<a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 <?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 total/<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 "><span><?php echo smarty_function_t(array('string' => 'tpl_Sales history_01'), $this);?>
-</span></a>
-            <?php $_smarty_tpl_vars = $this->_tpl_vars;
+</span></a>*}
+            {*<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."total/subnavi.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?>
-        </li>
-        <li id="navi-mail" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'mail'): ?>on<?php endif; ?>">
-            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+ ?>*}
+        {*</li>*}
+        {*<li id="navi-mail" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'mail'): ?>on<?php endif; ?>">*}
+            {*<a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 <?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 mail/<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 "><span><?php echo smarty_function_t(array('string' => 'tpl_Mail magazine_02'), $this);?>
-</span></a>
-            <?php $_smarty_tpl_vars = $this->_tpl_vars;
+</span></a>*}
+            {*<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."mail/subnavi.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?>
-        </li>
-        <li id="navi-contents" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'contents'): ?>on<?php endif; ?>">
-            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+ ?>*}
+        {*</li>*}
+        {*<li id="navi-contents" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'contents'): ?>on<?php endif; ?>">*}
+            {*<a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 <?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 contents/<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 "><span><?php echo smarty_function_t(array('string' => 'tpl_Edit contents_01'), $this);?>
-</span></a>
-            <?php $_smarty_tpl_vars = $this->_tpl_vars;
+</span></a>*}
+            {*<?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."contents/subnavi.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
- ?>
-        </li>
-        <li id="navi-design" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'design'): ?>on<?php endif; ?>">
-            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+ ?>*}
+        {*</li>*}
+        {*<li id="navi-design" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'design'): ?>on<?php endif; ?>">*}
+            {*<a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 <?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 design/<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 "><span><?php echo smarty_function_t(array('string' => 'tpl_Edit design_01'), $this);?>
+</span></a>*}
+            {*<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."design/subnavi.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>*}
+        {*</li>*}-->
+        <li id="navi-brand" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'brand'): ?>on<?php endif; ?>">
+            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+<?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+brand/brand.php<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+"><span><?php echo smarty_function_t(array('string' => 'Brands'), $this);?>
 </span></a>
             <?php $_smarty_tpl_vars = $this->_tpl_vars;
-$this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."design/subnavi.tpl", 'smarty_include_vars' => array()));
+$this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."brand/subnavi.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
@@ -229,18 +243,7 @@ $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
         </li>
-        <li id="navi-ownersstore" class="<?php if (((is_array($_tmp=$this->_tpl_vars['tpl_mainno'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) == 'ownersstore'): ?>on<?php endif; ?>">
-            <a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-<?php echo ((is_array($_tmp=@ADMIN_DIR)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-ownersstore/<?php echo ((is_array($_tmp=@DIR_INDEX_PATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-"><span><?php echo smarty_function_t(array('string' => 'tpl_Owners store_01'), $this);?>
-</span></a>
-            <?php $_smarty_tpl_vars = $this->_tpl_vars;
-$this->_smarty_include(array('smarty_include_tpl_file' => (@TEMPLATE_ADMIN_REALDIR)."ownersstore/subnavi.tpl", 'smarty_include_vars' => array()));
-$this->_tpl_vars = $_smarty_tpl_vars;
-unset($_smarty_tpl_vars);
- ?>
-        </li>
+
     </ul>
 </div>
 
@@ -273,4 +276,4 @@ unset($_smarty_tpl_vars);
 
 </div>
 </body>
-</html>
+</html>

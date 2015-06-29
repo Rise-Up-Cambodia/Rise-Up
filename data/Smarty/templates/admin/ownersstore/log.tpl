@@ -42,8 +42,8 @@
                 <td><!--{if $log.error_flg}--><!--{t string="tpl_Failure_01"}--><!--{else}--><!--{t string="tpl_Success_01"}--><!--{/if}--></td>
                 <td class="left"><!--{$log.update_date|sfDispDBDate|h}--></td>
                 <td>
-                        <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->ownersstore/log.php?mode=detail&amp;log_id=<!--{$log.log_id}-->">
-                        <!--{t string="tpl_Details_01"}--></a>
+                    <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->ownersstore/log.php?mode=detail&amp;log_id=<!--{$log.log_id}-->">
+                    <!--{t string="tpl_Details_01"}--></a>
                 </td>
                 <!--{*<td><!--{$log.log_id}--></td>*}-->
             </tr>

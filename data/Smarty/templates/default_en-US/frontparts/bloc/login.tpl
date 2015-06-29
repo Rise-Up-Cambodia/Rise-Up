@@ -22,7 +22,7 @@
 
 <div class="block_outer">
     <div id="login_area">
-        <h2><img src="<!--{$TPL_URLPATH}-->img/title/icon_bloc_login.gif" /><span class="title">Login</span></h2>
+        <h2><img src="<!--{$TPL_URLPATH}-->img/title/locker.png" /><span class="title">Login</span></h2>
         <form name="login_form" id="login_form" method="post" action="<!--{$smarty.const.HTTPS_URL}-->frontparts/login_check.php" onsubmit="return fnCheckLogin('login_form')">
             <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
             <input type="hidden" name="mode" value="login" />
@@ -42,9 +42,9 @@
                     <!--{/if}-->
                 <!--{else}-->
                     <dl class="formlist">
-                        <dt>E-mail address</dt>
+                       <!-- {*<dt>E-mail address</dt>*}-->
                         <dd>
-                            <input type="text" name="login_email" class="box140" value="<!--{$tpl_login_email|h}-->" style="ime-mode: disabled;" />
+                            <input type="text" name="login_email" placeholder="Email" class="box140" value="<!--{$tpl_login_email|h}-->" style="ime-mode: disabled;" />
                         </dd>
                         <dd class="mini">
                             <input type="checkbox" name="login_memory" id="login_memory" value="1" <!--{$tpl_login_memory|sfGetChecked:1}--> />
@@ -52,12 +52,13 @@
                         </dd>
                     </dl>
                     <dl class="formlist">
-                        <dt class="password">Password</dt>
-                        <dd><input type="password" name="login_pass" class="box140" /></dd>
+                       <!-- {*<dt class="password">Password</dt>*}-->
+                        <dd><input type="password" name="login_pass" placeholder="Password" class="box140" /></dd>
                         <dd class="mini">
                         <a href="<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->" onclick="win01('<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->','forget','600','400'); return false;" target="_blank">Retrieve lost password here</a>
                         </dd>
                     </dl>
+					<p><a href="http://localhost:8585/GitHub/Rise-Up-Shop/html/entry/kiyaku.php">Register Now</a></p>
                     <p class="btn">
 						<button class="bt02">Login</button>
                     </p>

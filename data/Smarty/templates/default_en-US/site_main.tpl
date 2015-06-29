@@ -51,7 +51,14 @@
         <!--{include file= $header_tpl}-->
     <!--{/if}-->
     <!--{* ▲HEADER *}-->
+    <div
 
+    <!-- ▼メイン -->
+    <!--{include file=banner.tpl}-->
+
+    <!--{* ▲メイン下部 *}-->
+    </div>
+</div>
     <div id="container" class="clearfix">
 
         <!--{* ▼TOP COLUMN*}-->
@@ -145,7 +152,7 @@
                 <!--{* ▼右ナビ *}-->
                 <!--{foreach key=RightNaviKey item=RightNaviItem from=$arrPageLayout.RightNavi}-->
                     <!-- ▼<!--{$RightNaviItem.bloc_name}--> -->
-                    <!--{if $RightNaviItem.php_path != ""}-->
+                <!--{if $RightNaviItem.php_path != ""}-->
                         <!--{include_php file=$RightNaviItem.php_path items=$RightNaviItem}-->
                     <!--{else}-->
                         <!--{include file=$RightNaviItem.tpl_path items=$RightNaviItem}-->

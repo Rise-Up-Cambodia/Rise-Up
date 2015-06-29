@@ -238,7 +238,7 @@ div.listphoto {
 #two_maincolumn_right div.listrightbloc,
 #two_maincolumn_left div.listrightbloc {
     float: right;
-    width: 80%;
+    width: 58%;
 }
 
 /* メインカラム用 3カラム時*/
@@ -300,7 +300,7 @@ div.listrightbloc .cart_area {
     padding: 10px;
     border: 1px solid #cef0f4;
     background-color: #ecf5ff;
-    width: 94%;
+    width:61%;
 }
 
 /* 規格 */
@@ -327,20 +327,21 @@ div.listrightbloc dd p.attention {
 /* カゴに入れる */
 div.listrightbloc .cartin {
     margin: 0;
-    float :right;
+
 }
 div.listrightbloc .cartin .quantity {
     padding: 3px 10px 0 0;
-    width: 150px;
+    width: 120px;
     float :left;
-    text-align: right;
+    /*text-align: right;*/
 }
 div.listrightbloc .cartin .quantity .box {
-    width: 70px;
+    width: 40px;
 }
 div.listrightbloc .cartin_btn {
-    width: 160px;
-    float :left;
+   /* width: 160px;*/
+    float :right;
+    margin-top: -25px;
 }
 
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-16 08:10:20
+<?php /* Smarty version 2.6.26, created on 2015-06-24 06:36:49
          compiled from frontparts/search_zero.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'frontparts/search_zero.tpl', 28, false),)), $this); ?>
@@ -15,4 +15,4 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_esca
             <?php endif; ?>
             </p>
         </div>
-    </div>
+    </div>

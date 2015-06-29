@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 09:17:47
+<?php /* Smarty version 2.6.26, created on 2015-06-26 04:21:14
          compiled from products/complete.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'products/complete.tpl', 26, false),array('modifier', 'h', 'products/complete.tpl', 32, false),array('modifier', 'function_exists', 'products/complete.tpl', 62, false),array('function', 't', 'products/complete.tpl', 42, false),)), $this); ?>
@@ -61,4 +61,4 @@ $this->_smarty_include(array('smarty_include_tpl_file' => (@MODULE_REALDIR)."mdl
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-<?php endif; ?>
+<?php endif; ?>

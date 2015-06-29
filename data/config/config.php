@@ -1,19 +1,19 @@
 <?php
 define('ECCUBE_INSTALL', 'ON');
-define('HTTP_URL', 'http://localhost:8585/Gift1/html/');
-define('HTTPS_URL', 'http://localhost:8585/Gift1/html/');
-define('ROOT_URLPATH', '/Gift1/html/');
+define('HTTP_URL', 'http://localhost:8585/GitHub/Rise-Up/html/');
+define('HTTPS_URL', 'http://localhost:8585/GitHub/Rise-Up/html/');
+define('ROOT_URLPATH', '/GitHub/Rise-Up/html/');
 define('DOMAIN_NAME', '');
 define('DB_TYPE', 'mysql');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '1234');
 define('DB_SERVER', 'localhost');
-define('DB_NAME', 'eccube_vanda');
+define('DB_NAME', 'rise_up_shop');
 define('DB_PORT', '');
 define('ADMIN_DIR', 'admin/');
 define('ADMIN_FORCE_SSL', FALSE);
 define('ADMIN_ALLOW_HOSTS', 'a:0:{}');
-define('AUTH_MAGIC', 'preagijupheahaipipaiheadeagicreaviowiach');
+define('AUTH_MAGIC', 'bekaclaemaigecabihigemiawricesoukasteasl');
 define('PASSWORD_HASH_ALGOS', 'sha256');
 define('MAIL_BACKEND', 'mail');
 define('SMTP_HOST', '');

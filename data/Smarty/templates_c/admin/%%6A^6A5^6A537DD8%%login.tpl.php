@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-16 07:06:19
+<?php /* Smarty version 2.6.26, created on 2015-06-28 11:17:33
          compiled from login.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'login.tpl', 29, false),array('modifier', 'date_format', 'login.tpl', 44, false),array('function', 't', 'login.tpl', 34, false),)), $this); ?>
@@ -8,7 +8,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_esca
 
     <div id="login-form" class="clearfix">
         <h1><img src="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/contents/Vanamo_Logo.png" width="140" height="150" alt="EC-CUBE management screen" /></h1>
+img/contents/admin_logo.png" width="160" height="150" alt="EC-CUBE management screen" /></h1>
         <div id="input-form">
             <form name="form1" id="form1" method="post" action="?">
             <input type="hidden" name="<?php echo ((is_array($_tmp=@TRANSACTION_ID_NAME)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
@@ -37,4 +37,4 @@ $(function() {
             'top' : '-1000px'})
         .appendTo('form');
 });
-//]]></script>
+//]]></script>

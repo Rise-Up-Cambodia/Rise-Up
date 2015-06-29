@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-15 02:29:33
+<?php /* Smarty version 2.6.26, created on 2015-06-26 04:21:59
          compiled from pager.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'pager.tpl', 4, false),)), $this); ?>
@@ -13,4 +13,4 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_esca
 </span></a></li>
     <?php endforeach; endif; unset($_from); ?>
     </ul>
-</div>
+</div>

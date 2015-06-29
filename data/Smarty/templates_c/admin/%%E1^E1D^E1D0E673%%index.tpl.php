@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-15 01:26:49
+<?php /* Smarty version 2.6.26, created on 2015-06-26 04:21:56
          compiled from products/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 't', 'products/index.tpl', 40, false),array('function', 'html_options', 'products/index.tpl', 261, false),array('function', 'html_checkboxes', 'products/index.tpl', 268, false),array('function', 'sfSetErrorStyle', 'products/index.tpl', 280, false),array('modifier', 'script_escape', 'products/index.tpl', 57, false),array('modifier', 'h', 'products/index.tpl', 60, false),array('modifier', 'sfGetErrorColor', 'products/index.tpl', 233, false),array('modifier', 'sfNoImageMainList', 'products/index.tpl', 397, false),array('modifier', 'number_format', 'products/index.tpl', 405, false),array('modifier', 'sfTrimURL', 'products/index.tpl', 421, false),array('modifier', 'sfTrim', 'products/index.tpl', 433, false),array('modifier', 'count', 'products/index.tpl', 447, false),)), $this); ?>
@@ -533,7 +533,7 @@ resize_image.php?image=<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($
                     <td class="menu" rowspan="2"><?php echo ((is_array($_tmp=$this->_tpl_vars['arrDISP'][$this->_tpl_vars['key']])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 </td>
                     <td class="menu" rowspan="2"><span class="icon_edit"><a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-" onclick="fnChangeAction('./product.php'); fnModeSubmit('pre_edit', 'product_id', <?php echo ((is_array($_tmp=$this->_tpl_vars['arrProducts'][$this->_sections['cnt']['index']]['product_id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+" onclick="fnChangeAction('./product1.php'); fnModeSubmit('pre_edit', 'product_id', <?php echo ((is_array($_tmp=$this->_tpl_vars['arrProducts'][$this->_sections['cnt']['index']]['product_id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 ); return false;" ><?php echo smarty_function_t(array('string' => 'tpl_Edit_01'), $this);?>
 </a></span></td>
                     <td class="menu" rowspan="2"><span class="icon_confirm"><a href="<?php echo ((is_array($_tmp=((is_array($_tmp=@HTTP_URL)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('sfTrimURL', true, $_tmp) : SC_Utils_Ex::sfTrimURL($_tmp)); ?>
@@ -552,7 +552,7 @@ resize_image.php?image=<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($
 ); return false;"><?php echo smarty_function_t(array('string' => 'tpl_Remove_01'), $this);?>
 </a></span></td>
                     <td class="menu" rowspan="2"><span class="icon_copy"><a href="<?php echo ((is_array($_tmp=@ROOT_URLPATH)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-" onclick="fnChangeAction('./product.php'); fnModeSubmit('copy', 'product_id', <?php echo ((is_array($_tmp=$this->_tpl_vars['arrProducts'][$this->_sections['cnt']['index']]['product_id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
+" onclick="fnChangeAction('./product1.php'); fnModeSubmit('copy', 'product_id', <?php echo ((is_array($_tmp=$this->_tpl_vars['arrProducts'][$this->_sections['cnt']['index']]['product_id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 ); return false;" ><?php echo smarty_function_t(array('string' => 'tpl_Duplication_01'), $this);?>
 </a></span></td>
                 </tr>
@@ -594,4 +594,4 @@ if ($this->_foreach['categories']['total'] > 0):
 
 <!--★★検索結果一覧★★-->
 <?php endif; ?>
-</div>
+</div>

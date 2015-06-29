@@ -55,12 +55,12 @@
             <!--{else}-->
                 <ul class="formlist clearfix">
                     <li class="mail">
-                        <input type="text" class="box150" name="login_email" value="<!--{$tpl_login_email|h}-->" style="ime-mode: disabled;" title="Please enter your e-mail address" />
+                        <input type="text" class="box150" placeholder="Email" name="login_email" value="<!--{$tpl_login_email|h}-->" style="ime-mode: disabled;" title="Please enter your e-mail address" />
                     </li>
                     <li class="login_memory">
                         <input type="checkbox" name="login_memory" id="header_login_memory" value="1" <!--{$tpl_login_memory|sfGetChecked:1}--> /><label for="header_login_memory"><span>Remember</span></label>
                     </li>
-                    <li class="password"><input type="password" class="box100" name="login_pass" title="Enter your password." /></li>
+                    <li class="password"><input type="password" placeholder="Password" class="box100" name="login_pass" title="Enter your password." /></li>
                     <li class="btn">
 						<button class="bt02">Login</button>					
                     </li>

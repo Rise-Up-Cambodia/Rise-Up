@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 07:56:27
+<?php /* Smarty version 2.6.26, created on 2015-06-29 01:39:20
          compiled from site_frame.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'printXMLDeclaration', 'site_frame.tpl', 1, false),array('modifier', 'script_escape', 'site_frame.tpl', 24, false),array('modifier', 'h', 'site_frame.tpl', 24, false),array('modifier', 'strlen', 'site_frame.tpl', 45, false),array('modifier', 'count', 'site_frame.tpl', 66, false),)), $this); ?>
@@ -56,9 +56,9 @@ js/jquery-1.4.2.min.js"></script>
 " />
 <?php endif; ?>
 <link rel="shortcut icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/common/favicon.ico" />
+img/common/favicon.png" />
 <link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/common/favicon.ico" />
+img/common/favicon.png" />
 
 <script type="text/javascript">//<![CDATA[
     <?php echo ((is_array($_tmp=$this->_tpl_vars['tpl_javascript'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
@@ -96,4 +96,4 @@ unset($_smarty_tpl_vars);
  ?>
 <!-- ▲BODY部 エンド -->
 
-</html>
+</html>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-15 07:40:12
+<?php /* Smarty version 2.6.26, created on 2015-06-24 03:26:28
          compiled from error.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'error.tpl', 27, false),)), $this); ?>
@@ -24,4 +24,4 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_esca
             </ul>
         </div>
     </div>
-</div>
+</div>

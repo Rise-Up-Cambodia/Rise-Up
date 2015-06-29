@@ -1,14 +1,11 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 07:53:05
+<?php /* Smarty version 2.6.26, created on 2015-06-28 11:17:48
          compiled from home.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'home.tpl', 30, false),array('modifier', 'sfDispDBDate', 'home.tpl', 33, false),array('modifier', 'h', 'home.tpl', 33, false),array('modifier', 'default', 'home.tpl', 73, false),array('modifier', 'number_format', 'home.tpl', 73, false),array('function', 't', 'home.tpl', 47, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'home.tpl', 29, false),array('modifier', 'sfDispDBDate', 'home.tpl', 31, false),array('modifier', 'h', 'home.tpl', 31, false),array('modifier', 'default', 'home.tpl', 71, false),array('modifier', 'number_format', 'home.tpl', 71, false),array('function', 't', 'home.tpl', 45, false),)), $this); ?>
 
 <div id="home">
 
         <div id="home-info">
-		<div class="banner">
-		<p><a href="http://en.ec-cube.net/forum/" target="_blank"><img src="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-img/banner/bnr_user_forums.jpg" /></a></p></div>
         <?php $_from = ((is_array($_tmp=$this->_tpl_vars['arrInfo'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['info']):
 ?>
@@ -207,4 +204,4 @@ $this->_sections['i']['last']       = ($this->_sections['i']['iteration'] == $th
         </form>
     </div>
     
-</div>
+</div>

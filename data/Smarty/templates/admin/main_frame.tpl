@@ -1,27 +1,4 @@
 <!--{printXMLDeclaration}--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--{*
-/*
- * This file is part of EC-CUBE
- *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
- *
- * http://www.lockon.co.jp/
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- */
-*}-->
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
@@ -53,8 +30,8 @@
 <link rel="stylesheet" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/smoothness/jquery-ui-1.8.24.custom.css" type="text/css" media="all" />
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/i18n/jquery.ui.datepicker-<!--{$smarty.const.LANG_CODE}-->.js"></script>
 <title><!--{$smarty.const.ADMIN_TITLE}--></title>
-<link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico" />
-<link rel="icon" type="image/vnd.microsoft.icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico" />
+<link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.png" />
+<link rel="icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.png" />
 <script type="text/javascript">//<![CDATA[
     <!--{$tpl_javascript}-->
     $(function(){
@@ -88,15 +65,17 @@
 <!--{* ▼HEADER *}-->
 <div id="header">
     <div id="header-contents">
-        <div id="logo"><a href="<!--{$smarty.const.ADMIN_HOME_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/header/logo.jpg" width="172" height="25" alt="EC-CUBE" /></a></div>
-        <div id="site-check">
-            <p class="info"><!--{t string="tpl_<span>Login&nbsp;:&nbsp;T_ARG1</span>&nbsp;_01" escape="none" T_ARG1=$smarty.session.login_name|h}--></p>
+        <div id="logo"><a href="<!--{$smarty.const.ADMIN_HOME_URLPATH}-->"><img src="<!--{$TPL_URLPATH}-->img/header/logo.png" width="172" height="25" alt="EC-CUBE" /></a></div>
+        <p class="info"><!--{t string="tpl_<span>Login&nbsp;:&nbsp;T_ARG1</span>&nbsp;_01" escape="none" T_ARG1=$smarty.session.login_name|h}--></p>
             <ul>
-                <li class="bt_forum"><a href="http://en.ec-cube.net/forum/" class="btn-tool-format02" target="_blank"><span>USER FORUMS</span></a></li>
-                <li class="bt_checksite"><a href="<!--{$smarty.const.HTTP_URL}--><!--{$smarty.const.DIR_INDEX_PATH}-->" class="btn-tool-format" target="_blank"><span><!--{t string="tpl_CHECK SITE_01"}--></span></a></li>
-                <li><a href="<!--{$smarty.const.ADMIN_LOGOUT_URLPATH}-->" class="btn-tool-format"><!--{t string="tpl_LOGOUT_01"}--></a></li>
+                <li><img src="<!--{$TPL_URLPATH}-->img/header/user.png" id="admin_user"/>
+                    <!--{*<li class="bt_forum"><a href="http://en.ec-cube.net/forum/" class="btn-tool-format02" target="_blank"><span>USER FORUMS</span></a></li>*}-->
+                    <ul id="user_popup">
+                        <li class="bt_checksite"><a href="<!--{$smarty.const.HTTP_URL}--><!--{$smarty.const.DIR_INDEX_PATH}-->"  target="_blank"><span><!--{t string="tpl_CHECK SITE_01"}--></span></a></li>
+                        <li><a href="<!--{$smarty.const.ADMIN_LOGOUT_URLPATH}-->"><!--{t string="tpl_LOGOUT_01"}--></a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
     </div>
 </div>
 <!--{* ▲HEADER *}-->
@@ -116,34 +95,35 @@
             <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->customer/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Members_01"}--></span></a>
             <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`customer/subnavi.tpl"}-->
         </li>
-        <li id="navi-order" class="<!--{if $tpl_mainno eq "order"}-->on<!--{/if}-->">
-            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->order/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Orders_01"}--></span></a>
-            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`order/subnavi.tpl"}-->
-        </li>
-        <li id="navi-total" class="<!--{if $tpl_mainno eq "total"}-->on<!--{/if}-->">
-            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->total/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Sales history_01"}--></span></a>
-            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`total/subnavi.tpl"}-->
-        </li>
-        <li id="navi-mail" class="<!--{if $tpl_mainno eq "mail"}-->on<!--{/if}-->">
-            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->mail/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Mail magazine_02"}--></span></a>
-            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`mail/subnavi.tpl"}-->
-        </li>
-        <li id="navi-contents" class="<!--{if $tpl_mainno eq "contents"}-->on<!--{/if}-->">
-            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->contents/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Edit contents_01"}--></span></a>
-            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`contents/subnavi.tpl"}-->
-        </li>
-        <li id="navi-design" class="<!--{if $tpl_mainno eq "design"}-->on<!--{/if}-->">
-            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->design/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Edit design_01"}--></span></a>
-            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`design/subnavi.tpl"}-->
+   <!--     {*<li id="navi-order" class="<!--{if $tpl_mainno eq "order"}-->on<!--{/if}-->">*}
+            {*<a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->order/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Orders_01"}--></span></a>*}
+            {*<!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`order/subnavi.tpl"}-->*}
+        {*</li>*}
+        {*<li id="navi-total" class="<!--{if $tpl_mainno eq "total"}-->on<!--{/if}-->">*}
+            {*<a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->total/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Sales history_01"}--></span></a>*}
+            {*<!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`total/subnavi.tpl"}-->*}
+        {*</li>*}
+        {*<li id="navi-mail" class="<!--{if $tpl_mainno eq "mail"}-->on<!--{/if}-->">*}
+            {*<a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->mail/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Mail magazine_02"}--></span></a>*}
+            {*<!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`mail/subnavi.tpl"}-->*}
+        {*</li>*}
+        {*<li id="navi-contents" class="<!--{if $tpl_mainno eq "contents"}-->on<!--{/if}-->">*}
+            {*<a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->contents/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Edit contents_01"}--></span></a>*}
+            {*<!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`contents/subnavi.tpl"}-->*}
+        {*</li>*}
+        {*<li id="navi-design" class="<!--{if $tpl_mainno eq "design"}-->on<!--{/if}-->">*}
+            {*<a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->design/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Edit design_01"}--></span></a>*}
+            {*<!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`design/subnavi.tpl"}-->*}
+        {*</li>*}-->
+        <li id="navi-brand" class="<!--{if $tpl_mainno eq "brand"}-->on<!--{/if}-->">
+            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->brand/brand.php<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="Brands"}--></span></a>
+            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`brand/subnavi.tpl"}-->
         </li>
         <li id="navi-system" class="<!--{if $tpl_mainno eq "system"}-->on<!--{/if}-->">
             <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->system/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_System settings_01"}--></span></a>
             <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`system/subnavi.tpl"}-->
         </li>
-        <li id="navi-ownersstore" class="<!--{if $tpl_mainno eq "ownersstore"}-->on<!--{/if}-->">
-            <a href="<!--{$smarty.const.ROOT_URLPATH}--><!--{$smarty.const.ADMIN_DIR}-->ownersstore/<!--{$smarty.const.DIR_INDEX_PATH}-->"><span><!--{t string="tpl_Owners store_01"}--></span></a>
-            <!--{include file="`$smarty.const.TEMPLATE_ADMIN_REALDIR`ownersstore/subnavi.tpl"}-->
-        </li>
+
     </ul>
 </div>
 <!--{* ▲NAVI *}-->

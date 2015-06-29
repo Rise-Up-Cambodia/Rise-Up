@@ -241,10 +241,11 @@
 
                 <div class="cartin">
                     <div class="cartin_btn">
-                        <div id="cartbtn_default">
-                            <!--★カゴに入れる★-->
-                            <a class="bt03" href="javascript:void(document.form1.submit())">Place in cart</a>
+                        <!--★カゴに入れる★-->
+                        <div id="cartbtn_default_<!--{$id}-->">
+                            <button class="bt03"  title="Place in Cart"onclick="fnInCart(this.form); return false;">Place in Cart</button>
                         </div>
+                        <div class="attention" id="cartbtn_dynamic_<!--{$id}-->"></div>
                     </div>
                 </div>
                 <div class="attention" id="cartbtn_dynamic"></div>

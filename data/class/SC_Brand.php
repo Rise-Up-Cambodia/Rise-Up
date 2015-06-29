@@ -59,7 +59,7 @@ class SC_Brand {
      * @param string $order 並び替えの順序 ASC / DESC
      * @return void
      */
-    function setProductsOrder($col, $table = 'dtb_brand', $order = 'ASC') {
+    function setProductsOrder($col, $table = 'dtb_products', $order = 'ASC') {
         $this->arrOrderData = array('col' => $col, 'table' => $table, 'order' => $order);
     }
 
@@ -74,7 +74,7 @@ class SC_Brand {
      */
     function findProductIdsOrder(&$objQuery, $arrVal = array()) {
         $table = <<< __EOS__
-            dtb_brand AS alldtl
+            dtb_products AS alldtl
 __EOS__;
         $objQuery->setGroupBy('alldtl.product_id');
         if (is_array($this->arrOrderData) and $objQuery->order == '') {
@@ -212,8 +212,8 @@ __EOS__;
     function getDetail($productId) {
         $objQuery =& SC_Query_Ex::getSingletonInstance();
         $arrProduct = $objQuery->getRow('*', $this->alldtlSQL('product_id = ?'),
-            'product_id = ?',
-            array($productId, $productId));
+                                    'product_id = ?',
+                                    array($productId, $productId));
         $arrProduct = (array)$arrProduct;
 
         // 税込金額を設定する
@@ -255,14 +255,14 @@ __EOS__;
             // 規格1クラス名
             $this->className1[$productId] =
                 isset($arrProductClasses[0]['class_name1'])
-                    ? $arrProductClasses[0]['class_name1']
-                    : '';
+                ? $arrProductClasses[0]['class_name1']
+                : '';
 
             // 規格2クラス名
             $this->className2[$productId] =
                 isset($arrProductClasses[0]['class_name2'])
-                    ? $arrProductClasses[0]['class_name2']
-                    : '';
+                ? $arrProductClasses[0]['class_name2']
+                : '';
 
             // 規格1が設定されている
             $this->classCat1_find[$productId] = $arrProductClasses[0]['classcategory_id1'] > 0; // 要変更ただし、他にも改修が必要となる
@@ -526,8 +526,8 @@ __EOS__;
 
         $objQuery =& SC_Query_Ex::getSingletonInstance();
         $objQuery->update('dtb_products_class', array(),
-            'product_class_id = ?', array($productClassId),
-            array('stock' => 'stock - ?'), array($quantity));
+                          'product_class_id = ?', array($productClassId),
+                          array('stock' => 'stock - ?'), array($quantity));
         // TODO エラーハンドリング
 
         $productsClass = $this->getDetailAndProductsClass($productClassId);

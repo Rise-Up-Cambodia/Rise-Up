@@ -52,8 +52,8 @@
 <!--{if $arrPageLayout.keyword|strlen >= 1}-->
     <meta name="keywords" content="<!--{$arrPageLayout.keyword|h}-->" />
 <!--{/if}-->
-<link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico" />
-<link rel="icon" type="image/vnd.microsoft.icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.ico" />
+<link rel="shortcut icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.png" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="<!--{$TPL_URLPATH}-->img/common/favicon.png" />
 
 <script type="text/javascript">//<![CDATA[
     <!--{$tpl_javascript}-->

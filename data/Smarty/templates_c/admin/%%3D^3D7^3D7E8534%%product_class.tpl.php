@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-12 09:18:42
+<?php /* Smarty version 2.6.26, created on 2015-06-26 04:21:18
          compiled from products/product_class.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'products/product_class.tpl', 35, false),array('modifier', 'h', 'products/product_class.tpl', 111, false),array('modifier', 'default_t', 'products/product_class.tpl', 197, false),array('modifier', 'sfGetErrorColor', 'products/product_class.tpl', 299, false),array('function', 't', 'products/product_class.tpl', 105, false),array('function', 'html_options', 'products/product_class.tpl', 139, false),array('function', 'sfSetErrorStyle', 'products/product_class.tpl', 245, false),)), $this); ?>
@@ -471,4 +471,4 @@ _<?php echo ((is_array($_tmp=$this->_tpl_vars['index'])) ? $this->_run_mod_handl
     <?php endif; ?>
 
 </div>
-</form>
+</form>
