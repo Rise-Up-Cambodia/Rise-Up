@@ -58,7 +58,7 @@
                         <a href="<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->" onclick="win01('<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->','forget','600','400'); return false;" target="_blank">Retrieve lost password here</a>
                         </dd>
                     </dl>
-					<p><a href="http://localhost:8585/GitHub/Rise-Up-Shop/html/entry/kiyaku.php">Register Now</a></p>
+					<p><a href="http://localhost:8585/GitHub/Rise-Up/html/entry/kiyaku.php">Register Now</a></p>
                     <p class="btn">
 						<button class="bt02">Login</button>
                     </p>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-29 06:16:08
+<?php /* Smarty version 2.6.26, created on 2015-06-29 07:42:46
          compiled from C:%5Cwamp%5Cwww%5CGitHub%5CRise-Up%5Chtml/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl', 25, false),array('modifier', 'h', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl', 29, false),array('modifier', 'number_format', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl', 35, false),array('modifier', 'default', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl', 35, false),array('modifier', 'sfGetChecked', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl', 50, false),array('modifier', 'sfTrimURL', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl', 58, false),)), $this); ?>
@@ -55,7 +55,7 @@ frontparts/login_check.php" onsubmit="return fnCheckLogin('login_form')">
 ','forget','600','400'); return false;" target="_blank">Retrieve lost password here</a>
                         </dd>
                     </dl>
-					<p><a href="http://localhost:8585/GitHub/Rise-Up-Shop/html/entry/kiyaku.php">Register Now</a></p>
+					<p><a href="http://localhost:8585/GitHub/Rise-Up/html/entry/kiyaku.php">Register Now</a></p>
                     <p class="btn">
 						<button class="bt02">Login</button>
                     </p>

@@ -38,7 +38,7 @@ class LC_Page_Popular extends LC_Page_Ex {
         $conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
 
-        $sql="SELECT * FROM dtb_products order by view_count desc limit 3";
+        $sql="SELECT * FROM dtb_products order by view_count desc limit 8";
         $result = mysqli_query($conn,$sql);
         $arr = [];
         $i = 0;

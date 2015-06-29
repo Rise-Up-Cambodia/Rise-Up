@@ -69,30 +69,6 @@ class LC_Page_FrontParts_Bloc_Recommend extends LC_Page_FrontParts_Bloc_Ex {
         // New Product
 
         $this->sendResponse();
-        parent::process();
-        $this->action();
-        //$this->sendResponse();
-        If($this->data_mode=='API'){
-            echo json_encode($this->arrProducts);
-        }else if($this->data_mode=='WEB'){
-            $this->sendResponse();
-        }else{
-            /*My own query*/
-            $servername = "localhost";
-            $username = "root";
-            $password = "1234";
-            $dbname = "rise_up_shop";
-            // Create connection
-            $dd = $this->data_mode;
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-
-            $sql="SELECT * FROM dtb_products where product_id=$dd";
-            $result = mysqli_query($conn,$sql);
-            echo json_encode(mysqli_fetch_object($result));
-        }
-
-
     }
 
     /**
@@ -184,7 +160,7 @@ class LC_Page_FrontParts_Bloc_Recommend extends LC_Page_FrontParts_Bloc_Ex {
         $conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
 
-        $sql="SELECT * FROM dtb_products order by view_count desc limit 3";
+        $sql="SELECT * FROM dtb_products order by view_count desc limit 2";
         $result = mysqli_query($conn,$sql);
         $arr = [];
         $i = 0;
