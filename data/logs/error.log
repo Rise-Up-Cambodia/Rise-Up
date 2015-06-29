@@ -1005,3 +1005,159 @@ customer_id =
 2015/06/29 07:50:06 [/GitHub/Rise-Up/html/index.php] Warning(E_WARNING): mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given on [C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(92)] from 127.0.0.1
 2015/06/29 07:51:26 [/GitHub/Rise-Up/html/index.php] Warning(E_WARNING): mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given on [C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(92)] from 127.0.0.1
 2015/06/29 07:59:12 [/GitHub/Rise-Up/html/index.php] Warning(E_WARNING): mysqli_fetch_object() expects parameter 1 to be mysqli_result, boolean given on [C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(92)] from 127.0.0.1
+2015/06/29 08:43:41 [/GitHub/Rise-Up/html/products/detail.php] Fatal error(E_ERROR): Call to undefined method LC_Page_Products_Detail_Ex::doAddFavorite() on [C:\wamp\www\GitHub\Rise-Up\data\class\pages\products\LC_Page_Products_Detail.php(165)] from 127.0.0.1
+customer_id = 2
+2015/06/29 08:43:45 [/GitHub/Rise-Up/html/products/detail.php] Fatal error(E_ERROR): Call to undefined method LC_Page_Products_Detail_Ex::doCart() on [C:\wamp\www\GitHub\Rise-Up\data\class\pages\products\LC_Page_Products_Detail.php(161)] from 127.0.0.1
+customer_id = 2
+2015/06/29 08:48:15 [/GitHub/Rise-Up/html/products/detail.php] Fatal error(E_ERROR): Call to undefined method LC_Page_Products_Detail_Ex::doCart() on [C:\wamp\www\GitHub\Rise-Up\data\class\pages\products\LC_Page_Products_Detail.php(161)] from 127.0.0.1
+customer_id = 2
+2015/06/29 08:57:17 [/GitHub/Rise-Up/html/index.php] Fatal error(E_USER_ERROR): Smarty error: [in C:\wamp\www\GitHub\Rise-Up\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl line 285]: syntax error: mismatched tag {/foreach}. (Smarty_Compiler.class.php, line 2338) on [C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093)] from 127.0.0.1
+customer_id = 2
+C:\wamp\www\GitHub\Rise-Up\html\index.php(33): LC_Page_Index_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\LC_Page_Index_Ex.php(56): LC_Page_Index->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page_Index.php(56): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1263): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%F1^F15^F158E3F4%%site_frame.tpl.php(93): Smarty->_smarty_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1869): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%58^587^5876E692%%site_main.tpl.php(159): smarty_core_smarty_include_php
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\internals\core.smarty_include_php.php(40): Smarty->_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1923): include
+C:\wamp\www\GitHub\Rise-Up\html\frontparts\bloc\recommend.php(35): LC_Page_FrontParts_Bloc_Recommend_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend_Ex.php(56): LC_Page_FrontParts_Bloc_Recommend->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(71): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1261): Smarty->_compile_resource
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1422): Smarty->_compile_source
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1489): Smarty_Compiler->_compile_file
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(533): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2325): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2338): Smarty_Compiler->_syntax_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1815): Smarty->trigger_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093): trigger_error
+2015/06/29 08:58:48 [/GitHub/Rise-Up/html/index.php] Fatal error(E_USER_ERROR): Smarty error: [in C:\wamp\www\GitHub\Rise-Up\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl line 405]: syntax error: mismatched tag {/foreach}. (Smarty_Compiler.class.php, line 2338) on [C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093)] from 127.0.0.1
+customer_id = 2
+C:\wamp\www\GitHub\Rise-Up\html\index.php(33): LC_Page_Index_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\LC_Page_Index_Ex.php(56): LC_Page_Index->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page_Index.php(56): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1263): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%F1^F15^F158E3F4%%site_frame.tpl.php(93): Smarty->_smarty_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1869): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%58^587^5876E692%%site_main.tpl.php(159): smarty_core_smarty_include_php
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\internals\core.smarty_include_php.php(40): Smarty->_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1923): include
+C:\wamp\www\GitHub\Rise-Up\html\frontparts\bloc\recommend.php(35): LC_Page_FrontParts_Bloc_Recommend_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend_Ex.php(56): LC_Page_FrontParts_Bloc_Recommend->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(71): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1261): Smarty->_compile_resource
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1422): Smarty->_compile_source
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1489): Smarty_Compiler->_compile_file
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(533): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2325): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2338): Smarty_Compiler->_syntax_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1815): Smarty->trigger_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093): trigger_error
+2015/06/29 08:58:51 [/GitHub/Rise-Up/html/index.php] Fatal error(E_USER_ERROR): Smarty error: [in C:\wamp\www\GitHub\Rise-Up\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl line 405]: syntax error: mismatched tag {/foreach}. (Smarty_Compiler.class.php, line 2338) on [C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093)] from 127.0.0.1
+customer_id = 2
+C:\wamp\www\GitHub\Rise-Up\html\index.php(33): LC_Page_Index_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\LC_Page_Index_Ex.php(56): LC_Page_Index->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page_Index.php(56): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1263): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%F1^F15^F158E3F4%%site_frame.tpl.php(93): Smarty->_smarty_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1869): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%58^587^5876E692%%site_main.tpl.php(159): smarty_core_smarty_include_php
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\internals\core.smarty_include_php.php(40): Smarty->_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1923): include
+C:\wamp\www\GitHub\Rise-Up\html\frontparts\bloc\recommend.php(35): LC_Page_FrontParts_Bloc_Recommend_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend_Ex.php(56): LC_Page_FrontParts_Bloc_Recommend->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(71): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1261): Smarty->_compile_resource
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1422): Smarty->_compile_source
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1489): Smarty_Compiler->_compile_file
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(533): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2325): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2338): Smarty_Compiler->_syntax_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1815): Smarty->trigger_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093): trigger_error
+2015/06/29 09:00:15 [/GitHub/Rise-Up/html/index.php] Fatal error(E_USER_ERROR): Smarty error: [in C:\wamp\www\GitHub\Rise-Up\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl line 405]: syntax error: mismatched tag {/foreach}. (Smarty_Compiler.class.php, line 2338) on [C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093)] from 127.0.0.1
+customer_id = 2
+C:\wamp\www\GitHub\Rise-Up\html\index.php(33): LC_Page_Index_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\LC_Page_Index_Ex.php(56): LC_Page_Index->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page_Index.php(56): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1263): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%F1^F15^F158E3F4%%site_frame.tpl.php(93): Smarty->_smarty_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1869): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%58^587^5876E692%%site_main.tpl.php(159): smarty_core_smarty_include_php
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\internals\core.smarty_include_php.php(40): Smarty->_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1923): include
+C:\wamp\www\GitHub\Rise-Up\html\frontparts\bloc\recommend.php(35): LC_Page_FrontParts_Bloc_Recommend_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend_Ex.php(56): LC_Page_FrontParts_Bloc_Recommend->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(71): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1261): Smarty->_compile_resource
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1422): Smarty->_compile_source
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1489): Smarty_Compiler->_compile_file
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(533): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2325): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2338): Smarty_Compiler->_syntax_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1815): Smarty->trigger_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093): trigger_error
+2015/06/29 09:00:20 [/GitHub/Rise-Up/html/index.php] Fatal error(E_USER_ERROR): Smarty error: [in C:\wamp\www\GitHub\Rise-Up\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl line 405]: syntax error: mismatched tag {/foreach}. (Smarty_Compiler.class.php, line 2338) on [C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093)] from 127.0.0.1
+customer_id = 2
+C:\wamp\www\GitHub\Rise-Up\html\index.php(33): LC_Page_Index_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\LC_Page_Index_Ex.php(56): LC_Page_Index->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page_Index.php(56): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1263): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%F1^F15^F158E3F4%%site_frame.tpl.php(93): Smarty->_smarty_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1869): include
+C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates_c\default_en-US\%%58^587^5876E692%%site_main.tpl.php(159): smarty_core_smarty_include_php
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\internals\core.smarty_include_php.php(40): Smarty->_include
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1923): include
+C:\wamp\www\GitHub\Rise-Up\html\frontparts\bloc\recommend.php(35): LC_Page_FrontParts_Bloc_Recommend_Ex->process
+C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend_Ex.php(56): LC_Page_FrontParts_Bloc_Recommend->process
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\frontparts\bloc\LC_Page_FrontParts_Bloc_Recommend.php(71): LC_Page->sendResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\pages\LC_Page.php(144): SC_Display->prepare
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_Display.php(77): SC_View->getResponse
+C:\wamp\www\GitHub\Rise-Up\data\class\SC_View.php(100): Smarty->fetch
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1261): Smarty->_compile_resource
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1422): Smarty->_compile_source
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1489): Smarty_Compiler->_compile_file
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(533): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2325): Smarty_Compiler->_pop_tag
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2338): Smarty_Compiler->_syntax_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1815): Smarty->trigger_error
+C:\wamp\www\GitHub\Rise-Up\data\module\Smarty\libs\Smarty.class.php(1093): trigger_error

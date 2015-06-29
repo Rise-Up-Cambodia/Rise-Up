@@ -254,31 +254,7 @@
             <!--{/if}-->
 
             <!--★お気に入り登録★-->
-            <!--{if $smarty.const.OPTION_FAVORITE_PRODUCT == 1 && $tpl_login === true}-->
-                <div class="favorite_btn">
-                    <!--{assign var=add_favorite value="add_favorite`$product_id`"}-->
-                    <!--{if $arrErr[$add_favorite]}-->
-                        <div class="attention"><!--{$arrErr[$add_favorite]}--></div>
-                    <!--{/if}-->
-                    <!--{if !$is_favorite}-->
-                        <a class="bt01" href="javascript:fnChangeAction('?product_id=<!--{$arrProduct.product_id|h}-->'); fnModeSubmit('add_favorite','favorite_product_id','<!--{$arrProduct.product_id|h}-->');">Add to Favorites</a>
-                    <!--{else}-->
-                        <span class="bt01" name="add_favorite_product" id="add_favorite_product">Already in favorites</span>
-                        <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.tipsy.js"></script>
-                        <script type="text/javascript">
-                            var favoriteButton = $("#add_favorite_product");
-                            favoriteButton.tipsy({gravity: $.fn.tipsy.autoNS, fallback: "Already in favorites", fade: true });
-
-                            <!--{if $just_added_favorite == true}-->
-                            favoriteButton.load(function(){$(this).tipsy("show")});
-                            $(function(){
-                                var tid = setTimeout('favoriteButton.tipsy("hide")',5000);
-                            });
-                            <!--{/if}-->
-                        </script>
-                    <!--{/if}-->
-                </div>
-            <!--{/if}-->
+        
         </div>
     </div>
     <!--▲買い物かご-->
