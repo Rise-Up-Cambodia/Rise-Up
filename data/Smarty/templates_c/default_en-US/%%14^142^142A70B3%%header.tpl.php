@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-30 02:46:39
+<?php /* Smarty version 2.6.26, created on 2015-06-30 07:38:01
          compiled from C:%5Cwamp%5Cwww%5CGitHub%5CRise-Up%5Chtml/../data/Smarty/templates/default_en-US/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/header.tpl', 2, false),array('modifier', 'h', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/header.tpl', 46, false),)), $this); ?>
@@ -8,7 +8,7 @@ js/custom.js"></script>
 <script>
 window.onload=function(){
 	$title = document.title;
-	
+
 	if($title.indexOf('All products')>0)
 	{
 		$("li a:contains('Products')").css("background","#f0433f");
@@ -30,7 +30,7 @@ window.onload=function(){
 		$("li a:contains('Home')").css("background","none");
 		$("li a:contains('Home')").css("color","#f0433f");
 	}
-	else if($title.indexOf('MY page')>0)
+	else if($title.indexOf('Purchase history list')>0)
 	{
 		$("li a:contains('User Profile')").css("background","#f0433f");
 		$("li a:contains('User Profile')").css("color","#fff");
@@ -41,7 +41,7 @@ window.onload=function(){
 	{
 		$("li a:contains('Home')").css("background","#f0433f");
 	}
-	
+
 }
 </script>
 <div id="header_wrap">
@@ -100,7 +100,6 @@ mypage/login.php">User Profile</a>
                 </ul>
 				<div id="cart_view">
 
-				</div>
             </div>
         </div>
     </div>

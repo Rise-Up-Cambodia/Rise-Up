@@ -160,7 +160,7 @@ class LC_Page_FrontParts_Bloc_Recommend extends LC_Page_FrontParts_Bloc_Ex {
         $conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection
 
-        $sql="SELECT * FROM dtb_products order by view_count desc limit 2";
+        $sql="SELECT * FROM dtb_products order by view_count desc limit 4";
         $result = mysqli_query($conn,$sql);
         $arr = [];
         $i = 0;
@@ -311,7 +311,7 @@ class LC_Page_FrontParts_Bloc_Recommend extends LC_Page_FrontParts_Bloc_Ex {
                         ORDER BY T3.rank DESC, T2.rank DESC
                         LIMIT 1
                     ) DESC
-                    ,product_id DESC limit 2
+                    ,product_id DESC limit 4
 __EOS__;
                 $objQuery->setOrder($order);
                 break;

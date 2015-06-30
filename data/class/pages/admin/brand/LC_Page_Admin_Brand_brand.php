@@ -56,8 +56,8 @@ class LC_Page_Admin_Brand_brand extends LC_Page_Admin_Ex {
         $this->tpl_mainpage = 'brand/brand.tpl';
         $this->tpl_mainno   = 'brand';
         $this->tpl_subno    = 'admin';
-        $this->tpl_maintitle = t('c_Owners Store_01');
-        $this->tpl_subtitle = t('c_Authentication key settings_01');
+        $this->tpl_maintitle = t('Brands');
+        $this->tpl_subtitle = t('Brand Management');
         $this->httpCacheControl('nocache');
         $this->tpl_page_category = 'abouts';
         $this->tpl_title = t('c_About this site_01');

@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-30 05:09:00
+<?php /* Smarty version 2.6.26, created on 2015-06-30 07:07:45
          compiled from C:%5Cwamp%5Cwww%5CGitHub%5CRise-Up%5Chtml/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 22, false),array('modifier', 'h', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 27, false),array('modifier', 'strlen', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 28, false),array('modifier', 'u', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 60, false),array('modifier', 'sfNoImageMainList', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 61, false),array('modifier', 'number_format', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 80, false),array('modifier', 'nl2br', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 89, false),array('modifier', 'default', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 103, false),array('modifier', 'sfGetErrorColor', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 103, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 22, false),array('modifier', 'h', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 27, false),array('modifier', 'strlen', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 28, false),array('modifier', 'u', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 60, false),array('modifier', 'sfNoImageMainList', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 61, false),array('modifier', 'number_format', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 80, false),array('modifier', 'nl2br', 'C:\\wamp\\www\\GitHub\\Rise-Up\\html/../data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl', 89, false),)), $this); ?>
 <h2 class="title"><img class="new-product" src="<?php echo ((is_array($_tmp=$this->_tpl_vars['TPL_URLPATH'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 img/title/icon_bloc_new.png" alt="*" class="title_icon" />New Products</h2>
 
@@ -105,33 +105,15 @@ if ($this->_foreach['arrProducts']['total'] > 0):
                         <input type="hidden" name="product_class_id" id="product_class_id<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)); ?>
 " value="<?php echo ((is_array($_tmp=$this->_tpl_vars['tpl_product_class_id'][$this->_tpl_vars['id']])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
 " />
-                        <div class="cart_area clearfix">
+
                             <?php if (((is_array($_tmp=$this->_tpl_vars['tpl_stock_find'][$this->_tpl_vars['id']])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp))): ?>
-                            <div class="cartin clearfix">
-                                <div class="quantity">
-                                    Quantity:<input type="text" name="quantity" class="box" value="<?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['arrProduct']['quantity'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('default', true, $_tmp, 1) : smarty_modifier_default($_tmp, 1)))) ? $this->_run_mod_handler('h', true, $_tmp) : smarty_modifier_h($_tmp)); ?>
-" maxlength="<?php echo ((is_array($_tmp=@INT_LEN)) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-" style="<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['arrErr']['quantity'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)))) ? $this->_run_mod_handler('sfGetErrorColor', true, $_tmp) : SC_Utils_Ex::sfGetErrorColor($_tmp)); ?>
-" />
-                                    <?php if (((is_array($_tmp=$this->_tpl_vars['arrErr']['quantity'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)) != ""): ?>
-                                    <br /><span class="attention"><?php echo ((is_array($_tmp=$this->_tpl_vars['arrErr']['quantity'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-</span>
-                                    <?php endif; ?>
-                                </div>
-                                <div class="cartin_btn">
-                                    <!--★カゴに入れる★-->
-                                    <div id="cartbtn_default_<?php echo ((is_array($_tmp=$this->_tpl_vars['id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-">
-                                        <button class="bt03" id="place-cart" title="Place in Cart"onclick="fnInCart(this.form); return false;"></button>
-                                    </div>
-                                    <div class="attention" id="cartbtn_dynamic_<?php echo ((is_array($_tmp=$this->_tpl_vars['id'])) ? $this->_run_mod_handler('script_escape', true, $_tmp) : smarty_modifier_script_escape($_tmp)); ?>
-"></div>
-                                </div>
-                            </div>
+
+
+
                             <?php else: ?>
                             <div class="cartbtn attention">This product is currently sold out. We apologize for the inconvenience.</div>
                             <?php endif; ?>
-                        </div>
+
                         <!--▲買い物かご-->
                     </div>
                 </div>
