@@ -96,27 +96,15 @@
                         <!--▼買い物かご-->
                         <input type="hidden" name="product_id" value="<!--{$id|h}-->" />
                         <input type="hidden" name="product_class_id" id="product_class_id<!--{$id|h}-->" value="<!--{$tpl_product_class_id[$id]}-->" />
-                        <div class="cart_area clearfix">
+
                             <!--{if $tpl_stock_find[$id]}-->
-                            <div class="cartin clearfix">
-                                <div class="quantity">
-                                    Quantity:<input type="text" name="quantity" class="box" value="<!--{$arrProduct.quantity|default:1|h}-->" maxlength="<!--{$smarty.const.INT_LEN}-->" style="<!--{$arrErr.quantity|sfGetErrorColor}-->" />
-                                    <!--{if $arrErr.quantity != ""}-->
-                                    <br /><span class="attention"><!--{$arrErr.quantity}--></span>
-                                    <!--{/if}-->
-                                </div>
-                                <div class="cartin_btn">
-                                    <!--★カゴに入れる★-->
-                                    <div id="cartbtn_default_<!--{$id}-->">
-                                        <button class="bt03" id="place-cart" title="Place in Cart"onclick="fnInCart(this.form); return false;"></button>
-                                    </div>
-                                    <div class="attention" id="cartbtn_dynamic_<!--{$id}-->"></div>
-                                </div>
-                            </div>
+
+
+
                             <!--{else}-->
                             <div class="cartbtn attention">This product is currently sold out. We apologize for the inconvenience.</div>
                             <!--{/if}-->
-                        </div>
+
                         <!--▲買い物かご-->
                     </div>
                 </div>

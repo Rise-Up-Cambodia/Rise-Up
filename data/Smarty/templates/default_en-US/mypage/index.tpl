@@ -23,7 +23,7 @@
 *}-->
 
 <div id="mypagecolumn">
-    <h2 class="title"><!--{$tpl_title|h}--></h2>
+    <h2 class="title"><!--{$tpl_title|h}--></h2><br/><br/>
     <!--{if $tpl_navi != ""}-->
         <!--{include file=$tpl_navi}-->
     <!--{else}-->

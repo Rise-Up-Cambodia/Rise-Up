@@ -3,7 +3,7 @@
 <script>
 window.onload=function(){
 	$title = document.title;
-	
+
 	if($title.indexOf('All products')>0)
 	{
 		$("li a:contains('Products')").css("background","#f0433f");
@@ -25,7 +25,7 @@ window.onload=function(){
 		$("li a:contains('Home')").css("background","none");
 		$("li a:contains('Home')").css("color","#f0433f");
 	}
-	else if($title.indexOf('MY page')>0)
+	else if($title.indexOf('Purchase history list')>0)
 	{
 		$("li a:contains('User Profile')").css("background","#f0433f");
 		$("li a:contains('User Profile')").css("color","#fff");
@@ -36,7 +36,7 @@ window.onload=function(){
 	{
 		$("li a:contains('Home')").css("background","#f0433f");
 	}
-	
+
 }
 </script>
 <div id="header_wrap">
@@ -83,7 +83,6 @@ window.onload=function(){
                 </ul>
 				<div id="cart_view">
 
-				</div>
             </div>
         </div>
     </div>
