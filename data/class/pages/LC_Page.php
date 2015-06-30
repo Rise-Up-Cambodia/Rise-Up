@@ -446,4 +446,38 @@ class LC_Page {
     function p($val) {
         SC_Utils_Ex::sfPrintR($val);
     }
+
+    function lfGetCartData(&$objCart) {
+        $arrCartKeys = $objCart->getKeys();
+        foreach ($arrCartKeys as $cart_key) {
+            // 購入金額合計
+            $products_total += $objCart->getAllProductsTotal($cart_key);
+            // 合計数量
+            $total_quantity += $objCart->getTotalQuantity($cart_key);
+
+            // 送料無料チェック
+            if (!$this->isMultiple && !$this->hasDownload) {
+                $is_deliv_free = $objCart->isDelivFree($cart_key);
+            }
+        }
+
+        $arrCartList = array();
+
+        $arrCartList['ProductsTotal'] = $products_total;
+        $arrCartList['TotalQuantity'] = $total_quantity;
+
+        // 店舗情報の取得
+        $arrInfo = SC_Helper_DB_Ex::sfGetBasisData();
+        $arrCartList['free_rule'] = $arrInfo['free_rule'];
+
+        // 送料無料までの金額
+        if ($is_deliv_free) {
+            $arrCartList['deliv_free'] = 0;
+        } else {
+            $deliv_free = $arrInfo['free_rule'] - $products_total;
+            $arrCartList['deliv_free'] = $deliv_free;
+        }
+
+        return $arrCartList;
+    }
 }

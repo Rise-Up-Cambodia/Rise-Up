@@ -12,3 +12,6 @@
 2015/06/27 13:17:09 [/Rise-Up-Shop/html/frontparts/login_check.php] logout : user=3	ip=127.0.0.1 from 127.0.0.1
 2015/06/28 07:10:00 [/Rise-Up-Shop/html/frontparts/login_check.php] access : user=3	ip=127.0.0.1 from 127.0.0.1
 2015/06/29 08:20:14 [/GitHub/Rise-Up/html/frontparts/login_check.php] access : user=2	ip=127.0.0.1 from 127.0.0.1
+2015/06/29 09:44:55 [/GitHub/Rise-Up/html/frontparts/login_check.php] logout : user=2	ip=127.0.0.1 from 127.0.0.1
+2015/06/29 09:47:10 [/GitHub/Rise-Up/html/entry/index.php] access : user=3	ip=127.0.0.1 from 127.0.0.1
+2015/06/30 01:54:42 [/GitHub/Rise-Up/html/entry/index.php] access : user=3	ip=::1 from ::1

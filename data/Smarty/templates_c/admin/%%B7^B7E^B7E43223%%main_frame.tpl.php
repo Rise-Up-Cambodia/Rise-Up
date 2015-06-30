@@ -1,8 +1,8 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-28 11:17:47
+<?php /* Smarty version 2.6.26, created on 2015-06-29 16:40:17
          compiled from main_frame.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'printXMLDeclaration', 'main_frame.tpl', 1, false),array('function', 't', 'main_frame.tpl', 55, false),array('modifier', 'script_escape', 'main_frame.tpl', 5, false),array('modifier', 'count', 'main_frame.tpl', 42, false),array('modifier', 'h', 'main_frame.tpl', 69, false),array('modifier', 'date_format', 'main_frame.tpl', 142, false),)), $this); ?>
-<?php echo GC_Utils_Ex::printXMLDeclaration(array(), $this);?>
+    <?php echo GC_Utils_Ex::printXMLDeclaration(array(), $this);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">

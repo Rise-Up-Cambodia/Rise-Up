@@ -43,7 +43,7 @@ class LC_Page_Products_Brand extends LC_Page_Ex {
         $servername = "localhost";
         $username = "root";
         $password = "1234";
-        $dbname = "eccube_vanda";
+        $dbname = "rise_up_shop";
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
         // Check connection

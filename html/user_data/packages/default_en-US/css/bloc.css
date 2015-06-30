@@ -137,8 +137,14 @@ zoom: 1;
 #news_area h2 img {
 	top: 0;
 	margin-bottom: 6px;
+    width: 27px;
 }
 
+.new-product {
+    width: 25px;
+    height: 25px;
+    padding: 0 8px 0 0;
+}
 
 #login_area h2 .title,
 #search_area h2 .title,
@@ -157,6 +163,10 @@ zoom: 1;
 	padding: 0 10px 7px 8px;
 	line-height: 1.4;
 	zoom: 1;
+}
+.popular-product {
+    width: 27px;
+    padding: 0 8px 0 0;
 }
 
 
@@ -213,7 +223,11 @@ div#bottomcolumn {
 ▼現在のカゴの中
 =============================================== */
 #cart_area .information {
+
     padding: 10px;
+    position: absolute;
+    margin-left: 928px;
+    margin-top: 85px;
 }
 #cart_area .postage {
     margin-top: 10px;

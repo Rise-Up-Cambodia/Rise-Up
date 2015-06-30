@@ -115,9 +115,10 @@ iframe {
 }
 #main_image img
  {
-    width:975px;
-    height:300px;
-    margin-top: -8px;
+    width: 975px;
+    height: 300px;
+    margin-top: -9px;
+
 
 }
 ol,
