@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa34cae-b439-4dfb-bb3d-c0ca9836a5eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%00^005^005B7C80%%recommend.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%00^005^005B7C80%%recommend.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%14^142^142A70B3%%header.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%14^142^142A70B3%%header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C0^C06^C06DCDAF%%banner.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C0^C06^C06DCDAF%%banner.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C5^C54^C54D13F7%%list.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C5^C54^C54D13F7%%list.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%F5^F50^F5000ED7%%subnavi.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%F5^F50^F5000ED7%%subnavi.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%F7^F76^F76274A7%%index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%F7^F76^F76274A7%%index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/admin/brand/LC_Page_Admin_Brand_brand.php" afterPath="$PROJECT_DIR$/data/class/pages/admin/brand/LC_Page_Admin_Brand_brand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php" afterPath="$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logs/admin.log" afterPath="$PROJECT_DIR$/data/logs/admin.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/banner.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/banner.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logs/error.log" afterPath="$PROJECT_DIR$/data/logs/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/mypage/index.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/mypage/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/products/subnavi.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/products/subnavi.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="caa34cae-b439-4dfb-bb3d-c0ca9836a5eb" name="Default" comment="" />
     <ignored path="Rise-Up-Shop.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -756,7 +738,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1382" height="754" extended-state="0" />
+    <frame x="-3" y="0" width="1382" height="754" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
