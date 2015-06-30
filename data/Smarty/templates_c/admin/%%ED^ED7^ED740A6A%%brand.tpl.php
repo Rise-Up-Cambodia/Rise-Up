@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2015-06-29 02:37:46
+<?php /* Smarty version 2.6.26, created on 2015-06-30 04:19:13
          compiled from brand/brand.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'brand/brand.tpl', 2, false),array('modifier', 'h', 'brand/brand.tpl', 16, false),array('function', 't', 'brand/brand.tpl', 5, false),)), $this); ?>

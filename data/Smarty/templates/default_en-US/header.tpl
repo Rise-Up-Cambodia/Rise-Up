@@ -81,9 +81,8 @@ window.onload=function(){
                         <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">User Profile</a>
                     </li>
                 </ul>
-				<div id="cart_view">	
-						<p class="item"><a class="btn-viewcart" href="<!--{$smarty.const.CART_URLPATH}-->">View cart</a>
-						Items in cart:<span class="attention"><!--{$arrCartList.0.TotalQuantity|number_format|default:0}--></span></p>
+				<div id="cart_view">
+
 				</div>
             </div>
         </div>

@@ -642,7 +642,7 @@ a:hover {
 
 #navi li a:hover span {
     /*background: url('../img/header/navi_on.jpg') left 0 repeat-x;*/
-    background-color: #F0433F;
+
 }
 
 #navi li.on a {
@@ -653,18 +653,18 @@ a:hover {
 
 #navi li.on a span {
     /*background: url('../img/header/navi_on.jpg') left 0 repeat-x;*/
-    background-color: #F0433F;
+
 }
 
 #navi li.sfhover a {
    /* background: url('../img/header/navi_on.jpg') left 0 repeat-x;*/
-    background-color: #F0433F;
+
 }
 
 #navi li.sfhover a span {
     /*background: url('../img/header/navi_on.jpg') left 0 repeat-x;*/
-    background-color: #F0433F;
-    color:#F0433F;
+
+    ;
 }
 
 #navi li ul {

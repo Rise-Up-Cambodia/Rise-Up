@@ -19,7 +19,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *}-->
-<h2 class="title">New Products</h2>
+<h2 class="title"><img class="new-product" src="<!--{$TPL_URLPATH}-->img/title/icon_bloc_new.png" alt="*" class="title_icon" />New Products</h2>
 
 <!--▼検索条件-->
 <!--{if $tpl_subtitle == "Search results"}-->
@@ -37,12 +37,10 @@
 
             <!--{if $smarty.foreach.arrProducts.first}-->
             <!--▼件数-->
-        <div>
-            There are <span class="attention"><!--{$tpl_linemax}--></span> products.
-        </div>
-        <!--▲件数-->
 
-        <!--▼ページナビ(上部)-->
+            <!--▲件数-->
+
+            <!--▼ページナビ(上部)-->
         <form name="page_navi_top" id="page_navi_top" action="?">
             <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
             <!--{if $tpl_linemax > 0}--><!--{$smarty.capture.page_navi_body|smarty:nodefaults}--><!--{/if}-->
@@ -154,6 +152,30 @@
 <!-- Popular Product -->
 
 
+
+<!--{*
+ * This file is part of EC-CUBE
+ *
+ * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ *
+ * http://www.lockon.co.jp/
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ *}-->
+
+
 <!--{*
  * This file is part of EC-CUBE
  *
@@ -236,7 +258,7 @@
     </form>
 
     <!--★タイトル★-->
-    <h2 class="title"><!--{$tpl_subtitle|h}--></h2>
+    <h2 class="title"><img class="popular-product" src="<!--{$TPL_URLPATH}-->img/title/icon_bloc_popular.png" alt="*" class="title_icon" /><!--{$tpl_subtitle|h}--></h2>
 
     <!--▼検索条件-->
     <!--{if $tpl_subtitle == "Search results"}-->
@@ -249,33 +271,6 @@
     <!--▲検索条件-->
 
     <!--▼ページナビ(本文)-->
-    <!--{capture name=page_navi_body}-->
-    <div class="pagenumber_area clearfix">
-        <div class="change">
-            <!--{if $orderby != 'price'}-->
-            <a href="javascript:fnChangeOrderby('price');">By price </a>
-            <!--{else}-->
-            <strong>By price</strong>
-            <!--{/if}-->&nbsp;
-            <!--{if $orderby != "date"}-->
-            <a href="javascript:fnChangeOrderby('date');">Recent</a>
-            <!--{else}-->
-            <strong>Recent</strong>
-            <!--{/if}-->&nbsp;
-            Items displayed
-            <select name="disp_number" onchange="javascript:fnChangeDispNumber(this.value);">
-                <!--{foreach from=$arrPRODUCTLISTMAX item="dispnum" key="num"}-->
-                <!--{if $num == $disp_number}-->
-                <option value="<!--{$num}-->" selected="selected" ><!--{$dispnum}--></option>
-                <!--{else}-->
-                <option value="<!--{$num}-->" ><!--{$dispnum}--></option>
-                <!--{/if}-->
-                <!--{/foreach}-->
-            </select>
-        </div>
-        <div class="navi"><!--{$tpl_strnavi}--></div>
-    </div>
-    <!--{/capture}-->
     <!--▲ページナビ(本文)-->
     <div class="block_body clearfix">
         <table class="table-item">
@@ -283,13 +278,9 @@
                 <!--{foreach from=$arrResults item=arrProduct name=arrProducts}-->
 
                 <!--{if $smarty.foreach.arrProducts.first}-->
-                <!--▼件数-->
-            <div>
-                There are <span class="attention"><!--{$tpl_linemax}--></span> products.
-            </div>
-            <!--▲件数-->
 
-            <!--▼ページナビ(上部)-->
+
+                <!--▼ページナビ(上部)-->
             <form name="page_navi_top" id="page_navi_top" action="?">
                 <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
                 <!--{if $tpl_linemax > 0}--><!--{$smarty.capture.page_navi_body|smarty:nodefaults}--><!--{/if}-->
@@ -345,7 +336,7 @@
                             <!--▼買い物かご-->
                             <input type="hidden" name="product_id" value="<!--{$id|h}-->" />
                             <input type="hidden" name="product_class_id" id="product_class_id<!--{$id|h}-->" value="<!--{$tpl_product_class_id[$id]}-->" />
-                           <!--{*<div class="cart_area clearfix">*}
+                            <!--{*<div class="cart_area clearfix">*}
                                 {*<!--{if $tpl_stock_find[$id]}-->*}
                                 {*<div class="cartin clearfix">*}
                                     {*<div class="quantity">*}
@@ -381,15 +372,9 @@
     <!--{include file="frontparts/search_zero.tpl"}-->
     <!--{/foreach}-->
     </tr>
+
     </table>
-    <!--{if $smarty.foreach.arrProducts.last}-->
-    <!--▼ページナビ(下部)-->
-    <form name="page_navi_bottom" id="page_navi_bottom" action="?">
-        <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
-        <!--{if $tpl_linemax > 0}--><!--{$smarty.capture.page_navi_body|smarty:nodefaults}--><!--{/if}-->
-    </form>
-    <!--▲ページナビ(下部)-->
-    <!--{/if}-->
+
 
 
 
@@ -401,32 +386,32 @@
 
 <!-- End Popular Product-->
 <!--{if count($arrBestProducts) > 0}-->
-    <div class="block_outer clearfix">
-        <div id="recommend_area">
-            <h2><img src="<!--{$TPL_URLPATH}-->img/title/icon_bloc_recommend.png" alt="*" class="title_icon" /><span class="title">Recommended products</span></h2>
-            <div class="block_body clearfix">
-                <!--{foreach from=$arrBestProducts item=arrProduct name="recommend_products"}-->
-                    <div class="product_item clearfix">
-                        <div class="productImage">
-                            <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->">
-                                <img src="<!--{$smarty.const.ROOT_URLPATH}-->resize_image.php?image=<!--{$arrProduct.main_list_image|sfNoImageMainList|h}-->&amp;width=80&amp;height=80" alt="<!--{$arrProduct.name|h}-->" />
-                            </a>
-                        </div>
-                        <div class="productContents">
-                            <h3>
-                                <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->"><!--{$arrProduct.name|h}--></a>
-                            </h3>
-                            <p class="sale_price">
-                                <!--{$smarty.const.SALE_PRICE_TITLE}-->(tax included): <span class="price">&#36; <!--{$arrProduct.price02_min_inctax|number_format}--></span>
-                            </p>
-                            <p class="mini comment"><!--{$arrProduct.comment|h|nl2br}--></p>
-                        </div>
-                    </div>
-                    <!--{if $smarty.foreach.recommend_products.iteration % 2 === 0}-->
-                        <div class="clear"></div>
-                    <!--{/if}-->
-                <!--{/foreach}-->
+<div class="block_outer clearfix">
+    <div id="recommend_area">
+        <h2><img src="<!--{$TPL_URLPATH}-->img/title/icon_bloc_recommend.png" alt="*" class="title_icon" /><span class="title">Recommended products</span></h2>
+        <div class="block_body clearfix">
+            <!--{foreach from=$arrBestProducts item=arrProduct name="recommend_products"}-->
+            <div class="product_item clearfix">
+                <div class="productImage">
+                    <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->">
+                        <img src="<!--{$smarty.const.ROOT_URLPATH}-->resize_image.php?image=<!--{$arrProduct.main_list_image|sfNoImageMainList|h}-->&amp;width=80&amp;height=80" alt="<!--{$arrProduct.name|h}-->" />
+                    </a>
+                </div>
+                <div class="productContents">
+                    <h3>
+                        <a href="<!--{$smarty.const.P_DETAIL_URLPATH}--><!--{$arrProduct.product_id|u}-->"><!--{$arrProduct.name|h}--></a>
+                    </h3>
+                    <p class="sale_price">
+                        <!--{$smarty.const.SALE_PRICE_TITLE}-->(tax included): <span class="price">&#36; <!--{$arrProduct.price02_min_inctax|number_format}--></span>
+                    </p>
+                    <p class="mini comment"><!--{$arrProduct.comment|h|nl2br}--></p>
+                </div>
             </div>
+            <!--{if $smarty.foreach.recommend_products.iteration % 2 === 0}-->
+            <div class="clear"></div>
+            <!--{/if}-->
+            <!--{/foreach}-->
         </div>
     </div>
+</div>
 <!--{/if}-->

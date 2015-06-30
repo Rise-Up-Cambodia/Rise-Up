@@ -2,89 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caa34cae-b439-4dfb-bb3d-c0ca9836a5eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/common/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand_Detail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/brand/LC_Page_Brand_Detail_Ex.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class/pages/products/LC_Page_Popular.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/products/LC_Page_Popular_Ex.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_Detail1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class/SC_Brand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/brand/brand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail1.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/products/listAPI.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/products/popular.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/popular.tpl" />
-      <change type="DELETED" beforePath="C:\wamp\www\GitHub\Rise-Up-Shop\html\admin\ownersstore\index.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand_detail.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand.tpl" />
-      <change type="MOVED" beforePath="C:\wamp\www\GitHub\Rise-Up-Shop\data\class\pages\brand\LC_Page_BrandDetail.php" afterPath="$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand.php" />
-      <change type="MOVED" beforePath="C:\wamp\www\GitHub\Rise-Up-Shop\data\class_extends\page_extends\brand\LC_Page_BrandDetail_Ex.php" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/brand/LC_Page_Brand_Ex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/common/header.jpg" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/common/header.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/common/logo.png" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/common/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%07^07D^07D8A706%%calendar.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%07^07D^07D8A706%%calendar.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%11^119^119D2234%%calendar.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%11^119^119D2234%%calendar.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%11^11A^11A4E86C%%login.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%11^11A^11A4E86C%%login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%58^587^5876E692%%site_main.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%58^587^5876E692%%site_main.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%60^603^603B04F1%%recommend.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%60^603^603B04F1%%recommend.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%62^62E^62EC85A0%%index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%62^62E^62EC85A0%%index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%6A^6A5^6A537DD8%%login.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%6A^6A5^6A537DD8%%login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%86^864^8644F0D6%%home.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%86^864^8644F0D6%%home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%92^921^9211E372%%index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%92^921^9211E372%%index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%A6^A61^A61C0CE1%%login.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%A6^A61^A61C0CE1%%login.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%A8^A8F^A8FA10F4%%recommend.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%A8^A8F^A8FA10F4%%recommend.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%AB^ABC^ABCF262F%%subnavi.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%AB^ABC^ABCF262F%%subnavi.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%AC^ACF^ACFA1AF6%%header.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%AC^ACF^ACFA1AF6%%header.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products1a.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/admin/products/LC_Page_Admin_Products_Product_Ex1a.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/products/product1.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/title/icon_bloc_news.png" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/title/icon_bloc_news.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/title/icon_bloc_recommend.png" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/img/title/icon_bloc_recommend.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%00^005^005B7C80%%recommend.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%00^005^005B7C80%%recommend.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%14^142^142A70B3%%header.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%14^142^142A70B3%%header.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%2F^2F5^2F55BADB%%cart.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%2F^2F5^2F55BADB%%cart.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%B7^B7E^B7E43223%%main_frame.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%B7^B7E^B7E43223%%main_frame.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%B8^B8B^B8B224B3%%detail.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%B8^B8B^B8B224B3%%detail.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C4^C4D^C4D75468%%header.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C4^C4D^C4D75468%%header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%CA^CA3^CA3EEDDD%%category.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%CA^CA3^CA3EEDDD%%category.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%D5^D56^D5698501%%subnavi.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%D5^D56^D5698501%%subnavi.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%DB^DBA^DBA111D2%%search_products.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%DB^DBA^DBA111D2%%search_products.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%DC^DC7^DC7B68EF%%category.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%DC^DC7^DC7B68EF%%category.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C5^C54^C54D13F7%%list.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%C5^C54^C54D13F7%%list.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%E1^E1D^E1D0E673%%index.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%E1^E1D^E1D0E673%%index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%E5^E5F^E5FF9EA2%%login_header.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%E5^E5F^E5FF9EA2%%login_header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%F1^F15^F158E3F4%%site_frame.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/default_en-US/%%F1^F15^F158E3F4%%site_frame.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%F7^F7C^F7CCBF74%%login_frame.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%F7^F7C^F7CCBF74%%login_frame.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products.php" afterPath="$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products_Class.php" afterPath="$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products_Class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class_extends/page_extends/admin/products/LC_Page_Admin_Products_Product_Ex.php" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/admin/products/LC_Page_Admin_Products_Product_Ex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php" afterPath="$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%ED^ED7^ED740A6A%%brand.tpl.php" afterPath="$PROJECT_DIR$/data/Smarty/templates_c/admin/%%ED^ED7^ED740A6A%%brand.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/LC_Page.php" afterPath="$PROJECT_DIR$/data/class/pages/LC_Page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/LC_Page_Index.php" afterPath="$PROJECT_DIR$/data/class/pages/LC_Page_Index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/brand/LC_Page_Products_Brand.php" afterPath="$PROJECT_DIR$/data/class/pages/brand/LC_Page_Products_Brand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_Detail.php" afterPath="$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_Detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class_extends/page_extends/products/LC_Page_Products_Detail_Ex.php" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/products/LC_Page_Products_Detail_Ex.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_List.php" afterPath="$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_List.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/class_extends/page_extends/products/LC_Page_Products_List_Ex.php" afterPath="$PROJECT_DIR$/data/class_extends/page_extends/products/LC_Page_Products_List_Ex.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logs/admin.log" afterPath="$PROJECT_DIR$/data/logs/admin.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/admin/css/admin_contents.css" afterPath="$PROJECT_DIR$/html/user_data/packages/admin/css/admin_contents.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/bloc.css" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/bloc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/brand.css" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/brand.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/brand/brand_detail.php" afterPath="$PROJECT_DIR$/html/brand/brand_detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand_detail.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand_detail.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/calendar.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/calendar.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/category.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/category.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/cart.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/cart.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/contents.css" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/js/custom.js" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logs/customer.log" afterPath="$PROJECT_DIR$/data/logs/customer.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logs/error.log" afterPath="$PROJECT_DIR$/data/logs/error.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/home.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/home.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/index.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/products/list.php" afterPath="$PROJECT_DIR$/html/products/list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/ownersstore/log.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/ownersstore/log.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/login.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/login.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/login.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/login_frame.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/login_frame.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/login_header.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/login_header.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/main_frame.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/main_frame.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/admin/products/product.php" afterPath="$PROJECT_DIR$/html/admin/products/product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/products/product.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/products/product.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/reset.css" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logs/site.log" afterPath="$PROJECT_DIR$/data/logs/site.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/site_frame.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/site_frame.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/site_main.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/default_en-US/site_main.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/Smarty/templates/admin/ownersstore/subnavi.tpl" afterPath="$PROJECT_DIR$/data/Smarty/templates/admin/ownersstore/subnavi.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/table.css" afterPath="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/table.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Rise-Up-Shop.iws" />
@@ -108,55 +54,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LC_Page_Index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/class/pages/LC_Page_Index.php">
+      <file leaf-file-name="product1.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/products/product1.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.73077" vertical-offset="539" max-vertical-offset="1088">
+            <state line="273" column="22" selection-start="17580" selection-end="17580" vertical-scroll-proportion="-3.1923077" vertical-offset="4558" max-vertical-offset="7361">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC_Page_FrontParts_Bloc_Recommend.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php">
+      <file leaf-file-name="LC_Page_Admin_Products.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="31" selection-start="6563" selection-end="6563" vertical-scroll-proportion="-19.307692" vertical-offset="2524" max-vertical-offset="10863">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_contents.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/user_data/packages/admin/css/admin_contents.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="661" column="1" selection-start="12670" selection-end="12670" vertical-scroll-proportion="0.3252174" vertical-offset="11050" max-vertical-offset="29393">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popular.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/popular.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="650" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LC_Page_Popular.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Popular.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="31" selection-start="678" selection-end="1462" vertical-scroll-proportion="-16.538462" vertical-offset="454" max-vertical-offset="1105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="4" selection-start="3490" selection-end="3962" vertical-scroll-proportion="-11.115385" vertical-offset="1105" max-vertical-offset="4233">
+            <state line="31" column="21" selection-start="1042" selection-end="1042" vertical-scroll-proportion="8.5" vertical-offset="408" max-vertical-offset="6511">
               <folding />
             </state>
           </provider>
@@ -165,18 +75,174 @@
       <file leaf-file-name="recommend.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="26" selection-start="7342" selection-end="7342" vertical-scroll-proportion="-11.461538" vertical-offset="2422" max-vertical-offset="3485">
+            <state line="417" column="0" selection-start="19594" selection-end="19594" vertical-scroll-proportion="-19.307692" vertical-offset="6587" max-vertical-offset="7191">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bloc.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/bloc.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="140" column="1" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="8976">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="273" column="12" selection-start="3964" selection-end="3964" vertical-scroll-proportion="0.49288255" vertical-offset="4364" max-vertical-offset="14688">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LC_Page_Admin_Products_Product_Ex.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/class_extends/page_extends/admin/products/LC_Page_Admin_Products_Product_Ex.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="26" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="901">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/products/product.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="62" selection-start="269" selection-end="269" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="7752">
               <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#td#0;n#form#1;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1435283995942" expanded="true" signature="4:863" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="898:1714" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="938:1110" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1020:1059" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1065:1108" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1112:1164" placeholder="//..." />
+                <marker date="1435283995942" expanded="true" signature="1203:1594" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1252:1385" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1281:1379" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1457:1592" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1646:1704" placeholder="{...}" />
+                <marker date="1435283995942" expanded="true" signature="1801:29520" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="3093:29513" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="3191:21003" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="3204:3329" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="3342:3952" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="3467:3938" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="3670:3763" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="3965:5613" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="4095:5599" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="4210:5581" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="4235:5556" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="4264:4580" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="4347:4480" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="4512:4550" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="4617:4631" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="4632:5148" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="5177:5530" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="5300:5332" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="5342:5500" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="5626:5912" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="5762:5898" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="5925:6177" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="6005:6163" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="6246:6546" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="6371:6532" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="6559:7214" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="6700:7200" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="6930:7031" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="7227:8528" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="7428:8514" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="8095:8133" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="8541:9183" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="8666:9169" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="8893:8994" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="9196:9800" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="9276:9786" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="9545:9641" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="9813:10528" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="9970:10514" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="10256:10352" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="10541:11281" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="10669:11267" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="10898:10992" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="11316:12199" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="11402:12185" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="11694:11792" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="12212:12869" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="12341:12855" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="12625:12724" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="12882:13401" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="12968:13387" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="13100:13146" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="13147:13369" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="13414:13975" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="13508:13961" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="13752:13851" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="13988:14472" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="14066:14458" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="14188:14229" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="14230:14440" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="14485:15008" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="14567:14994" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="14804:14845" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="15021:15626" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="15159:15612" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="15363:15404" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="15639:16181" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="15730:16167" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="15926:15963" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="16194:16884" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="16327:16870" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="16514:16620" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="16897:17599" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="17060:17585" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="17238:17339" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="17612:18820" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="17873:18806" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="18530:18568" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="18833:19894" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="19093:19880" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="19610:19648" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="19907:20990" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="20180:20976" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="20700:20738" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="21217:21433" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="21563:21575" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="21576:25942" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="21673:25931" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="21811:22500" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="22026:22486" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="22298:22336" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="22513:23305" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="22806:23291" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="23048:23086" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="23318:24661" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="23657:24647" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="24372:24410" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="24674:25835" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="25026:25821" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="25546:25584" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="25965:26189" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="26324:29512" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="26382:26394" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="26494:28810" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="26684:28750" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="26880:27325" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="27342:28736" placeholder="..." />
+                <marker date="1435283995942" expanded="false" signature="28471:28509" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="28866:29505" placeholder="..." />
+                <marker date="1435283995942" expanded="true" signature="28951:29494" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LC_Page_Products_List.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_List.php">
+      <file leaf-file-name="brand.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/brand/brand.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="590" column="5" selection-start="7228" selection-end="21350" vertical-scroll-proportion="-18.0" vertical-offset="9222" max-vertical-offset="9826">
+            <state line="14" column="56" selection-start="705" selection-end="705" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
@@ -195,10 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/main_frame.tpl" />
-        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/products/subnavi.tpl" />
-        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/basis/subnavi.tpl" />
-        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/system/subnavi.tpl" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/index.tpl" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/banner.tpl" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/login_header.tpl" />
@@ -218,12 +280,10 @@
         <option value="$PROJECT_DIR$/data/class_extends/page_extends/brand/LC_Page_Brand_Detail_Ex.php" />
         <option value="$PROJECT_DIR$/html/brand/brand_detail.php" />
         <option value="$PROJECT_DIR$/data/class/SC_Brand.php" />
-        <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/bloc.css" />
         <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/brand.css" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand_detail.tpl" />
         <option value="$PROJECT_DIR$/html/products/popular.php" />
         <option value="$PROJECT_DIR$/data/class_extends/page_extends/products/LC_Page_Popular_Ex.php" />
-        <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl" />
         <option value="$PROJECT_DIR$/data/class/pages/products/LC_Page_Popular.php" />
         <option value="$PROJECT_DIR$/html/admin/products/product.php" />
         <option value="$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_Detail.php" />
@@ -236,15 +296,22 @@
         <option value="$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand_Detail.php" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail.tpl" />
-        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/brand/brand.tpl" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand.tpl" />
         <option value="$PROJECT_DIR$/data/class/pages/admin/brand/LC_Page_Admin_Brand_brand.php" />
-        <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/reset.css" />
-        <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css" />
         <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/popular.tpl" />
-        <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl" />
         <option value="$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php" />
+        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/products/index.tpl" />
         <option value="$PROJECT_DIR$/html/user_data/packages/admin/css/admin_contents.css" />
+        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/main_frame.tpl" />
+        <option value="$PROJECT_DIR$/data/class/pages/LC_Page_Index.php" />
+        <option value="$PROJECT_DIR$/data/class/pages/LC_Page.php" />
+        <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/cart.tpl" />
+        <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl" />
+        <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/reset.css" />
+        <option value="$PROJECT_DIR$/data/Smarty/templates/admin/brand/brand.tpl" />
+        <option value="$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl" />
+        <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/bloc.css" />
+        <option value="$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css" />
       </list>
     </option>
   </component>
@@ -280,31 +347,32 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -314,29 +382,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user_data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -347,18 +397,14 @@
               <option name="myItemId" value="user_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -373,18 +419,14 @@
               <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -400,7 +442,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="default_en-US" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rise-Up" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default_en-US" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -410,29 +478,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -442,11 +492,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -454,17 +504,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
+              <option name="myItemId" value="Smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -472,21 +522,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
+              <option name="myItemId" value="Smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -494,25 +544,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
+              <option name="myItemId" value="Smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="products" />
+              <option name="myItemId" value="default_en-US" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -520,11 +570,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
+              <option name="myItemId" value="Smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default_en-US" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -534,11 +588,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
+              <option name="myItemId" value="Rise-Up" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -546,11 +600,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
+              <option name="myItemId" value="Smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default_en-US" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -562,35 +620,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rise-Up-Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="class" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brand" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -601,11 +632,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\GitHub\Rise-Up\data\Smarty\templates\admin\products" />
+      <recent name="C:\wamp\www\GitHub\Rise-Up\data\class_extends\page_extends\admin\products" />
+      <recent name="C:\wamp\www\GitHub\Rise-Up\data\class\pages\admin\products" />
       <recent name="C:\wamp\www\GitHub\Rise-Up-Shop\html\products" />
       <recent name="C:\wamp\www\GitHub\Rise-Up-Shop\data\class_extends\page_extends\admin\products" />
-      <recent name="C:\wamp\www\GitHub\Rise-Up-Shop\html\admin\products" />
-      <recent name="C:\wamp\www\GitHub\Rise-Up-Shop\data\class\pages\admin\products" />
-      <recent name="C:\wamp\www\GitHub\Rise-Up-Shop\data\Smarty\templates\admin\products" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\GitHub\Rise-Up-Shop\html\admin\basis" />
@@ -649,7 +680,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27719033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -681,144 +712,429 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail1.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6613">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="49" selection-start="12107" selection-end="12107" vertical-scroll-proportion="-5.230769" vertical-offset="4029" max-vertical-offset="6630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand_Detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="306" selection-end="306" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1904">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/admin/brand/brand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/brand/brand.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="84" selection-start="4740" selection-end="4740" vertical-scroll-proportion="2.7067962" vertical-offset="255" max-vertical-offset="2057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="451" column="15" selection-start="8143" selection-end="8143" vertical-scroll-proportion="0.8596154" vertical-offset="7220" max-vertical-offset="14705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.37913042" vertical-offset="1822" max-vertical-offset="2397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/class/pages/admin/brand/LC_Page_Admin_Brand_brand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="82" selection-start="5993" selection-end="5993" vertical-scroll-proportion="0.58768654" vertical-offset="2915" max-vertical-offset="4012">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/class/pages/LC_Page_Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.73077" vertical-offset="539" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/brand/brand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.1508772" vertical-offset="781" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="809" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="4" selection-start="3490" selection-end="3962" vertical-scroll-proportion="-11.115385" vertical-offset="1105" max-vertical-offset="4233">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/popular.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="650" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="26" selection-start="7342" selection-end="7342" vertical-scroll-proportion="-11.461538" vertical-offset="2422" max-vertical-offset="3485">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#td#0;n#form#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_List.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="590" column="5" selection-start="7228" selection-end="21350" vertical-scroll-proportion="-18.0" vertical-offset="9222" max-vertical-offset="9826">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Popular.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="31" selection-start="678" selection-end="1462" vertical-scroll-proportion="-16.538462" vertical-offset="454" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="31" selection-start="6563" selection-end="6563" vertical-scroll-proportion="-19.307692" vertical-offset="2524" max-vertical-offset="10863">
+        <state line="198" column="31" selection-start="6092" selection-end="6092" vertical-scroll-proportion="0.0" vertical-offset="3366" max-vertical-offset="10795">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/user_data/packages/admin/css/admin_contents.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="661" column="1" selection-start="12670" selection-end="12670" vertical-scroll-proportion="0.3252174" vertical-offset="11050" max-vertical-offset="29393">
+        <state line="661" column="1" selection-start="12670" selection-end="12670" vertical-scroll-proportion="0.0" vertical-offset="11050" max-vertical-offset="29393" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/popular.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="650" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4233" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Popular.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="31" selection-start="678" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="4" selection-start="3490" selection-end="3962" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="4233" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="2" selection-start="7292" selection-end="7292" vertical-scroll-proportion="0.0" vertical-offset="2720" max-vertical-offset="7446" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_List.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="590" column="5" selection-start="7228" selection-end="21350" vertical-scroll-proportion="0.0" vertical-offset="10030" max-vertical-offset="10166" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail1.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6613" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/detail.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="245" column="49" selection-start="12107" selection-end="12107" vertical-scroll-proportion="-5.230769" vertical-offset="4029" max-vertical-offset="6630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand_Detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="306" selection-end="306" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/brand/brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/admin/brand/LC_Page_Admin_Brand_brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="82" selection-start="5993" selection-end="5993" vertical-scroll-proportion="0.58768654" vertical-offset="2915" max-vertical-offset="4012" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/brand/brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/brand/LC_Page_Brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="22" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.1508772" vertical-offset="781" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/brand/brand.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="809" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/popular.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="650" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Popular.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="30" selection-start="1159" selection-end="1159" vertical-scroll-proportion="-11.961538" vertical-offset="454" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_data/packages/admin/css/admin_contents.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="644" column="0" selection-start="12252" selection-end="12252" vertical-scroll-proportion="0.25585285" vertical-offset="10795" max-vertical-offset="29393" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/products/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="419" column="153" selection-start="19034" selection-end="19034" vertical-scroll-proportion="0.23782772" vertical-offset="6996" max-vertical-offset="7837" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/products/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products1a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="34" selection-start="5093" selection-end="5093" vertical-scroll-proportion="1.9731663" vertical-offset="1056" max-vertical-offset="6511" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products_Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="59" selection-start="6166" selection-end="6166" vertical-scroll-proportion="1.7310345" vertical-offset="1444" max-vertical-offset="22049" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class_extends/page_extends/admin/products/LC_Page_Admin_Products_Product_Ex1a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="20" selection-start="1510" selection-end="1535" vertical-scroll-proportion="0.97470486" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/products/list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="4" selection-start="3490" selection-end="3962" vertical-scroll-proportion="0.49827588" vertical-offset="1105" max-vertical-offset="4233" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/products/LC_Page_Products_List.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="559" column="13" selection-start="20055" selection-end="20055" vertical-scroll-proportion="0.4362069" vertical-offset="8910" max-vertical-offset="9826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/admin/products/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="100" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/admin_popup_header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="24.76923" vertical-offset="644" max-vertical-offset="1224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/main_frame.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="6" selection-start="9208" selection-end="9208" vertical-scroll-proportion="0.7620818" vertical-offset="1902" max-vertical-offset="2720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Recommend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="0" selection-start="6108" selection-end="6108" vertical-scroll-proportion="0.0" vertical-offset="3383" max-vertical-offset="10795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/site_frame.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/site_main.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="4" selection-start="2034" selection-end="2066" vertical-scroll-proportion="0.33267328" vertical-offset="784" max-vertical-offset="3689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class_extends/page_extends/frontparts/bloc/LC_Page_FrontParts_Bloc_Cart_Ex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/LC_Page_Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="23" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-14.653846" vertical-offset="894" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/frontparts/bloc/LC_Page_FrontParts_Bloc_Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="72" selection-start="1737" selection-end="2012" vertical-scroll-proportion="-13.346154" vertical-offset="503" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07434944" vertical-offset="40" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/banner.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="56" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.7583643" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/LC_Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="400" column="32" selection-start="11727" selection-end="11727" vertical-scroll-proportion="1.2612085" vertical-offset="5813" max-vertical-offset="7973">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="15" selection-start="1135" selection-end="1135" vertical-scroll-proportion="3.3882148" vertical-offset="0" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_data/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="3686" selection-end="3686" vertical-scroll-proportion="0.60465115" vertical-offset="1090" max-vertical-offset="1649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/cart.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="196" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.60465115" vertical-offset="104" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/sitemap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/products/product1.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="22" selection-start="17580" selection-end="17580" vertical-scroll-proportion="-3.1923077" vertical-offset="4558" max-vertical-offset="7361">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class_extends/page_extends/admin/products/LC_Page_Admin_Products_Product_Ex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="26" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/products/product.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="62" selection-start="269" selection-end="269" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="7752">
+          <folding>
+            <marker date="1435283995942" expanded="true" signature="4:863" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="898:1714" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="938:1110" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1020:1059" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1065:1108" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1112:1164" placeholder="//..." />
+            <marker date="1435283995942" expanded="true" signature="1203:1594" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1252:1385" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1281:1379" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1457:1592" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1646:1704" placeholder="{...}" />
+            <marker date="1435283995942" expanded="true" signature="1801:29520" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="3093:29513" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="3191:21003" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="3204:3329" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="3342:3952" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="3467:3938" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="3670:3763" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="3965:5613" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="4095:5599" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="4210:5581" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="4235:5556" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="4264:4580" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="4347:4480" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="4512:4550" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="4617:4631" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="4632:5148" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="5177:5530" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="5300:5332" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="5342:5500" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="5626:5912" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="5762:5898" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="5925:6177" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="6005:6163" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="6246:6546" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="6371:6532" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="6559:7214" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="6700:7200" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="6930:7031" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="7227:8528" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="7428:8514" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="8095:8133" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="8541:9183" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="8666:9169" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="8893:8994" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="9196:9800" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="9276:9786" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="9545:9641" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="9813:10528" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="9970:10514" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="10256:10352" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="10541:11281" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="10669:11267" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="10898:10992" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="11316:12199" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="11402:12185" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="11694:11792" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="12212:12869" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="12341:12855" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="12625:12724" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="12882:13401" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="12968:13387" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="13100:13146" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="13147:13369" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="13414:13975" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="13508:13961" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="13752:13851" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="13988:14472" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="14066:14458" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="14188:14229" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="14230:14440" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="14485:15008" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="14567:14994" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="14804:14845" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="15021:15626" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="15159:15612" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="15363:15404" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="15639:16181" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="15730:16167" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="15926:15963" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="16194:16884" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="16327:16870" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="16514:16620" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="16897:17599" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="17060:17585" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="17238:17339" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="17612:18820" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="17873:18806" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="18530:18568" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="18833:19894" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="19093:19880" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="19610:19648" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="19907:20990" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="20180:20976" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="20700:20738" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="21217:21433" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="21563:21575" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="21576:25942" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="21673:25931" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="21811:22500" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="22026:22486" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="22298:22336" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="22513:23305" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="22806:23291" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="23048:23086" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="23318:24661" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="23657:24647" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="24372:24410" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="24674:25835" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="25026:25821" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="25546:25584" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="25965:26189" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="26324:29512" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="26382:26394" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="26494:28810" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="26684:28750" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="26880:27325" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="27342:28736" placeholder="..." />
+            <marker date="1435283995942" expanded="false" signature="28471:28509" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="28866:29505" placeholder="..." />
+            <marker date="1435283995942" expanded="true" signature="28951:29494" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/admin/brand/brand.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="56" selection-start="705" selection-end="705" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/class/pages/admin/products/LC_Page_Admin_Products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="21" selection-start="1042" selection-end="1042" vertical-scroll-proportion="8.5" vertical-offset="408" max-vertical-offset="6511">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Smarty/templates/default_en-US/frontparts/bloc/recommend.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="417" column="0" selection-start="19594" selection-end="19594" vertical-scroll-proportion="-19.307692" vertical-offset="6587" max-vertical-offset="7191">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/bloc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="1" selection-start="2627" selection-end="2627" vertical-scroll-proportion="0.0" vertical-offset="2244" max-vertical-offset="8976">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user_data/packages/default_en-US/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="12" selection-start="3964" selection-end="3964" vertical-scroll-proportion="0.49288255" vertical-offset="4364" max-vertical-offset="14688">
           <folding />
         </state>
       </provider>

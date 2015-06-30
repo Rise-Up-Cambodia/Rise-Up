@@ -68,7 +68,10 @@ class LC_Page_Products_Detail extends LC_Page_Ex {
     function init() {
         parent::init();
         $masterData = new SC_DB_MasterData_Ex();
-       
+        $this->arrSTATUS = $masterData->getMasterData('mtb_status');
+        $this->arrSTATUS_IMAGE = $masterData->getMasterData('mtb_status_image');
+        $this->arrDELIVERYDATE = $masterData->getMasterData('mtb_delivery_date');
+        $this->arrRECOMMEND = $masterData->getMasterData('mtb_recommend');
     }
 
     /**
@@ -88,7 +91,6 @@ class LC_Page_Products_Detail extends LC_Page_Ex {
      * @return void
      */
     function action() {
-
         // 会員クラス
         $objCustomer = new SC_Customer_Ex();
 
@@ -104,18 +106,20 @@ class LC_Page_Products_Detail extends LC_Page_Ex {
         // プロダクトIDの正当性チェック
         $product_id = $this->lfCheckProductId($this->objFormParam->getValue('admin'),$this->objFormParam->getValue('product_id'));
         $this->mode = $this->getMode();
-        if($_SESSION['customer']['email']!= ""){
-            /*My own query*/
-            $servername = "localhost";
-            $username = "root";
-            $password = "1234";
-            $dbname = "rise_up_shop";
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            $sql="update dtb_products SET view_count=view_count+1 WHERE product_id=$product_id";
-            mysqli_query($conn,$sql);
-        }
+		
+		
+	 if($_SESSION['customer']['email']!= ""){
+				/*My own query*/
+				$servername = "localhost";
+				$username = "root";
+				$password = "1234";
+				$dbname = "rise_up_shop";
+				// Create connection
+				$conn = new mysqli($servername, $username, $password, $dbname);
+				// Check connection
+				$sql="update dtb_products SET view_count=view_count+1 WHERE product_id=$product_id";
+				mysqli_query($conn,$sql);
+			}
 
         $objProduct = new SC_Product_Ex();
         $objProduct->setProductsClassByProductIds(array($product_id));
@@ -369,7 +373,10 @@ class LC_Page_Products_Detail extends LC_Page_Ex {
     }
 
     /* 商品規格情報の取得 */
-   
+    function lfGetProductsClass($product_id) {
+        $objProduct = new SC_Product_Ex();
+        return $objProduct->getProductsClassFullByProductId($product_id);
+    }
 
     /* 登録済み関連商品の読み込み */
     function lfPreGetRecommendProducts($product_id) {
@@ -396,7 +403,36 @@ class LC_Page_Products_Detail extends LC_Page_Ex {
     }
 
     /* 入力内容のチェック */
-   
+    function lfCheckError($mode,&$objFormParam,$tpl_classcat_find1 = null ,$tpl_classcat_find2 = null) {
+
+        switch ($mode) {
+        case 'add_favorite_sphone':
+        case 'add_favorite':
+            $objCustomer = new SC_Customer_Ex();
+            $objErr = new SC_CheckError_Ex();
+            $customer_id = $objCustomer->getValue('customer_id');
+            if (SC_Helper_DB_Ex::sfDataExists('dtb_customer_favorite_products', 'customer_id = ? AND product_id = ?', array($customer_id, $favorite_product_id))) {
+                $objErr->arrErr['add_favorite'.$favorite_product_id] = t('c_* This product has already been added to Favorites.<br />_01');
+            }
+            break;
+        default:
+            // 入力データを渡す。
+            $arrRet =  $objFormParam->getHashArray();
+            $objErr = new SC_CheckError_Ex($arrRet);
+            $objErr->arrErr = $objFormParam->checkError();
+
+            // 複数項目チェック
+            if ($tpl_classcat_find1) {
+                $objErr->doFunc(array(t('c_Standard 1_01'), 'classcategory_id1'), array('EXIST_CHECK'));
+            }
+            if ($tpl_classcat_find2) {
+                $objErr->doFunc(array(t('c_Standard 2_01'), 'classcategory_id2'), array('EXIST_CHECK'));
+            }
+            break;
+        }
+
+        return $objErr->arrErr;
+    }
 
     //商品ごとのレビュー情報を取得する
     function lfGetReviewData($id) {
@@ -432,13 +468,214 @@ class LC_Page_Products_Detail extends LC_Page_Ex {
         return $subImageFlag;
     }
 
-  
+    /*
+     * お気に入り商品登録
+     * @return void
+     */
+    function lfRegistFavoriteProduct($favorite_product_id,$customer_id) {
+        // ログイン中のユーザが商品をお気に入りにいれる処理
+        if (!SC_Helper_DB_Ex::sfIsRecord('dtb_products', 'product_id', $favorite_product_id, 'del_flg = 0 AND status = 1')) {
+            SC_Utils_Ex::sfDispSiteError(PRODUCT_NOT_FOUND);
+            return false;
+        } else {
+            $objQuery =& SC_Query_Ex::getSingletonInstance();
+            $exists = $objQuery->exists('dtb_customer_favorite_products', 'customer_id = ? AND product_id = ?', array($customer_id, $favorite_product_id));
+
+            if (!$exists) {
+                $sqlval['customer_id'] = $customer_id;
+                $sqlval['product_id'] = $favorite_product_id;
+                $sqlval['update_date'] = 'CURRENT_TIMESTAMP';
+                $sqlval['create_date'] = 'CURRENT_TIMESTAMP';
+
+                $objQuery->begin();
+                $objQuery->insert('dtb_customer_favorite_products', $sqlval);
+                $objQuery->commit();
+            }
+            // お気に入りに登録したことを示すフラグ
+            $this->just_added_favorite = true;
+            return true;
+        }
+    }
+
+    /**
+     * Add product(s) into the cart.
+     * 
+     * @return void 
+     */
+    function doCart() {
+        $this->arrErr = $this->lfCheckError($this->mode,$this->objFormParam,
+                                            $this->tpl_classcat_find1,
+                                            $this->tpl_classcat_find2);
+        if (count($this->arrErr) == 0) {
+            $objCartSess = new SC_CartSession_Ex();
+            $product_class_id = $this->objFormParam->getValue('product_class_id');
+
+            $objCartSess->addProduct($product_class_id, $this->objFormParam->getValue('quantity'));
+
+
+            SC_Response_Ex::sendRedirect(CART_URLPATH);
+            SC_Response_Ex::actionExit();
+        }
+    }
+
+    /**
+     * Add product to authenticated user's favorites.
+     *
+     * @param type $objCustomer 
+     * @return void
+     */
+    function doAddFavorite(&$objCustomer) {
+        // ログイン中のユーザが商品をお気に入りにいれる処理
+        if ($objCustomer->isLoginSuccess() === true && $this->objFormParam->getValue('favorite_product_id') > 0) {
+            $this->arrErr = $this->lfCheckError($this->mode,$this->objFormParam);
+            if (count($this->arrErr) == 0) {
+                if (!$this->lfRegistFavoriteProduct($this->objFormParam->getValue('favorite_product_id'),$objCustomer->getValue('customer_id'))) {
+
+                    $objPlugin = SC_Helper_Plugin_Ex::getSingletonInstance($this->plugin_activate_flg);
+                    $objPlugin->doAction('LC_Page_Products_Detail_action_add_favorite', array($this));
+
+                    SC_Response_Ex::actionExit();
+                }
+            }
+        }
+    }
+
+    /**
+     * Add product to authenticated user's favorites. (for Smart phone)
+     *
+     * @param type $objCustomer 
+     * @return void
+     */
+    function doAddFavoriteSphone($objCustomer) {
+        // ログイン中のユーザが商品をお気に入りにいれる処理(スマートフォン用)
+        if ($objCustomer->isLoginSuccess() === true && $this->objFormParam->getValue('favorite_product_id') > 0) {
+            $this->arrErr = $this->lfCheckError($this->mode,$this->objFormParam);
+            if (count($this->arrErr) == 0) {
+                if ($this->lfRegistFavoriteProduct($this->objFormParam->getValue('favorite_product_id'),$objCustomer->getValue('customer_id'))) {
+
+                    $objPlugin = SC_Helper_Plugin_Ex::getSingletonInstance($this->plugin_activate_flg);
+                    $objPlugin->doAction('LC_Page_Products_Detail_action_add_favorite_sphone', array($this));
+
+                    print 'true';
+                    SC_Response_Ex::actionExit();
+                }
+            }
+            print 'error';
+            SC_Response_Ex::actionExit();
+        }
+    }
+
+    /**
+     * 
+     * 
+     * @return void 
+     */
     function doDefault() {
         // カート「戻るボタン」用に保持
         $netURL = new Net_URL();
         $_SESSION['cart_referer_url'] = $netURL->getURL();
     }
 
-   
-    
+    /**
+     * 
+     * @return void
+     */
+    function doMobileSelect() {
+        // 規格1が設定されている場合
+        if ($this->tpl_classcat_find1) {
+            // templateの変更
+            $this->tpl_mainpage = 'products/select_find1.tpl';
+            return;
+        }
+
+        // 数量の入力を行う
+        $this->tpl_mainpage = 'products/select_item.tpl';
+    }
+
+    /**
+     *
+     * @return type 
+     */
+    function doMobileSelect2() {
+        $this->arrErr = $this->lfCheckError($this->mode,$this->objFormParam,$this->tpl_classcat_find1,$this->tpl_classcat_find2);
+
+        // 規格1が設定されていて、エラーを検出した場合
+        if ($this->tpl_classcat_find1 and $this->arrErr['classcategory_id1']) {
+            // templateの変更
+            $this->tpl_mainpage = 'products/select_find1.tpl';
+            return;
+        }
+
+        // 規格2が設定されている場合
+        if ($this->tpl_classcat_find2) {
+            $this->arrErr = array();
+
+            $this->tpl_mainpage = 'products/select_find2.tpl';
+            return;
+        }
+
+        $this->doMobileSelectItem();
+    }
+
+    /**
+     * 
+     * @return void
+     */
+    function doMobileSelectItem() {
+        $objProduct = new SC_Product_Ex();
+
+        $this->arrErr = $this->lfCheckError($this->mode, $this->objFormParam, $this->tpl_classcat_find1, $this->tpl_classcat_find2);
+
+        // この段階では、商品規格ID・数量の入力チェックエラーを出させない。
+        // FIXME: エラーチェックの定義で mode で定義を分岐する方が良いように感じる
+        unset($this->arrErr['product_class_id']);
+        unset($this->arrErr['quantity']);
+
+        // 規格2が設定されていて、エラーを検出した場合
+        if ($this->tpl_classcat_find2 and !empty($this->arrErr)) {
+            // templateの変更
+            $this->tpl_mainpage = 'products/select_find2.tpl';
+            return;
+        }
+
+        $product_id = $this->objFormParam->getValue('product_id');
+
+        $value1 = $this->objFormParam->getValue('classcategory_id1');
+        if (strlen($value1) === 0) {
+            $value1 = '__unselected';
+        }
+
+        // 規格2が設定されている場合.
+        if (SC_Utils_Ex::isBlank($this->objFormParam->getValue('classcategory_id2')) == false){
+            $value2 = '#' . $this->objFormParam->getValue('classcategory_id2');
+        } else {
+            $value2 = '#0';
+        }
+
+        $objProduct->setProductsClassByProductIds(array($product_id));
+        $this->tpl_product_class_id = $objProduct->classCategories[$product_id][$value1][$value2]['product_class_id'];
+
+        // 数量の入力を行う
+        $this->tpl_mainpage = 'products/select_item.tpl';
+    }
+
+    /**
+     *
+     * @return void 
+     */
+    function doMobileCart() {
+        // この段階でエラーが出る場合は、数量の入力エラーのはず
+        if (count($this->arrErr)) {
+            // 数量の入力を行う
+            $this->tpl_mainpage = 'products/select_item.tpl';
+        }
+    }
+
+    /**
+     *
+     * @return void 
+     */
+    function doMobileDefault() {
+        $this->tpl_mainpage = 'products/detail.tpl';
+    }
 }
